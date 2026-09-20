@@ -1,0 +1,57 @@
+{
+  "evergreen": [
+    "fitness",
+    "crossfit",
+    "hiit",
+    "wod",
+    "workoutmotivation",
+    "gymlife",
+    "strengthandconditioning"
+  ],
+  "niche": {
+    "crossfit hiit": [
+      "crossfittraining",
+      "hiitworkout",
+      "functionaltraining",
+      "metcon",
+      "boxlife",
+      "enginework",
+      "xfittv"
+    ],
+    "functional fitness": [
+      "functionalfitness",
+      "strengthandconditioning",
+      "mobilitytraining",
+      "athletetraining",
+      "hybridathlete"
+    ],
+    "fat loss": [
+      "fatlosstips",
+      "bodyrecomp",
+      "weightlossjourney",
+      "leanmuscle",
+      "hiitcardio"
+    ],
+    "strength": [
+      "strengthgains",
+      "progressiveoverload",
+      "liftheavy",
+      "compoundlifts",
+      "olympiclifting"
+    ]
+  },
+  "discovery": [
+    "fittok",
+    "gymtok",
+    "crossfittok",
+    "reelsfitness",
+    "workoutroutine",
+    "homegym"
+  ],
+  "rules": {
+    "instagram": { "min": 8, "max": 15 },
+    "tiktok": { "min": 3, "max": 5 },
+    "x": { "min": 0, "max": 2 },
+    "youtube_shorts": { "min": 3, "max": 5 }
+  }
+}

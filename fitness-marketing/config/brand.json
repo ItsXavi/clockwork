@@ -1,0 +1,93 @@
+{
+  "brandName": "XFITTV",
+  "displayName": "XFitTV",
+  "creator": "Xavier Castro",
+  "handle": "@xfittv",
+  "handles": {
+    "instagram": "@xfittv",
+    "meta": "@xfittv",
+    "tiktok": "@xfittvx"
+  },
+  "niche": "crossfit hiit",
+  "audience": {
+    "primary": "athletes and everyday lifters who want CrossFit-style conditioning, strength, and high-energy training they can follow on camera",
+    "painPoints": [
+      "random WODs with no progression",
+      "burning out from all-out intensity every day",
+      "not knowing how to scale movements",
+      "inconsistent training when life gets busy"
+    ],
+    "desires": [
+      "get fitter, stronger, and more conditioned",
+      "train with clear sessions they can film and finish",
+      "build a community around XFITTV workouts",
+      "look and feel athletic without overcomplicating it"
+    ]
+  },
+  "voice": {
+    "tone": ["high-energy", "direct", "motivational", "coach-on-camera"],
+    "avoid": ["shame", "miracle claims", "medical advice", "gatekeeping beginners"],
+    "signaturePhrases": [
+      "Hit play. Train with XFITTV.",
+      "Scale it. Finish it. Come back stronger.",
+      "Intensity with intention."
+    ]
+  },
+  "platforms": ["instagram", "tiktok"],
+  "pillars": [
+    {
+      "id": "workouts",
+      "name": "WODs & Sessions",
+      "share": 0.4,
+      "formats": ["reel", "carousel", "short"]
+    },
+    {
+      "id": "nutrition",
+      "name": "Fuel & Recovery",
+      "share": 0.15,
+      "formats": ["carousel", "reel", "story"]
+    },
+    {
+      "id": "mindset",
+      "name": "Mindset & Grind",
+      "share": 0.2,
+      "formats": ["reel", "story", "carousel"]
+    },
+    {
+      "id": "proof",
+      "name": "PRs & Progress",
+      "share": 0.15,
+      "formats": ["reel", "carousel", "story"]
+    },
+    {
+      "id": "community",
+      "name": "Community & CTA",
+      "share": 0.1,
+      "formats": ["story", "reel", "live"]
+    }
+  ],
+  "postingCadence": {
+    "instagram": { "feed": 4, "reels": 5, "stories": 7 },
+    "tiktok": { "videos": 5 }
+  },
+  "ctaLibrary": [
+    "Follow @xfittv for daily training energy.",
+    "Save this WOD for your next session.",
+    "Comment WOD and I’ll drop the full breakdown.",
+    "Tag your training partner and run it together.",
+    "Follow @xfittvx on TikTok for more sessions.",
+    "DM START for this week’s training focus."
+  ],
+  "offers": [
+    {
+      "name": "XFITTV Weekly WOD Pack",
+      "type": "lead_magnet",
+      "hook": "free"
+    },
+    {
+      "name": "XFITTV Coaching / Programming",
+      "type": "core_offer",
+      "hook": "limited spots"
+    }
+  ]
+}

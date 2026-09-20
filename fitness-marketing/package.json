@@ -1,0 +1,21 @@
+{
+  "name": "fitness-marketing-agents",
+  "version": "1.0.0",
+  "description": "Multi-agent toolkit for fitness social media content, scheduling, and growth strategy",
+  "type": "module",
+  "bin": {
+    "fitness-agents": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "plan": "node src/cli.js plan",
+    "week": "node src/cli.js week",
+    "post": "node src/cli.js post",
+    "grow": "node src/cli.js grow",
+    "export": "node src/cli.js export"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
