@@ -14,6 +14,16 @@ Built as a practical automation layer you can run locally, wire to Buffer/Later,
 | **Scheduler** | 7-day calendar + CSV for Buffer / Later / Meta schedulers |
 | **Growth** | Daily rhythm, experiments, profile/funnel, anti-spam rules |
 
+## Talk in Telegram
+
+See **[TELEGRAM.md](./TELEGRAM.md)** — create a bot with @BotFather, set `TELEGRAM_BOT_TOKEN`, then:
+
+```bash
+npm run bot
+```
+
+Commands in chat: `/week` · `/post` · `/grow` · `/today` · `/plan`
+
 ## Brand: XFITTV
 
 Configured for **XFitTV (Xavier Castro)**:
