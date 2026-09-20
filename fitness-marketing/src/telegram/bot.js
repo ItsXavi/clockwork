@@ -41,6 +41,7 @@ process.on("SIGINT", () => {
 });
 
 console.log("XFITTV Telegram bot running. Open Telegram and message your bot.");
+console.log(`Token loaded (ends with …${TOKEN.slice(-4)}, length ${TOKEN.length}).`);
 if (allowed.size) console.log(`Allowlist: ${[...allowed].join(", ")}`);
 else console.log("No TELEGRAM_ALLOWED_USERS set — anyone who finds the bot can use it.");
 
@@ -160,6 +161,7 @@ function loadDotEnv() {
     ) {
       val = val.slice(1, -1);
     }
-    if (!(key in process.env)) process.env[key] = val;
+    // .env always wins so rotated BotFather tokens take effect on restart
+    process.env[key] = val;
   }
 }
