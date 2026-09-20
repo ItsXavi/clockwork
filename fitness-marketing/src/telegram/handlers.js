@@ -9,6 +9,8 @@ import {
   runStrategy,
   runReview
 } from "../pipeline.js";
+import { downloadTelegramFile, pickMediaFromMessage } from "./media.js";
+import { reviewMedia, formatMediaReviewMessage } from "../agents/mediaReview.js";
 
 export async function handleUpdate(update, ctx) {
   const msg = update.message;
@@ -26,17 +28,14 @@ export async function handleUpdate(update, ctx) {
     return;
   }
 
-  // Media without a slash command — acknowledge so it never feels dead
-  if (!text && (msg.video || msg.photo || msg.document || msg.voice)) {
-    console.log(`[media] user=${userId} type=${msg.video ? "video" : msg.photo ? "photo" : "other"}`);
-    await ctx.sendMessage(
-      chatId,
-      "Got your media ✅\n\nTo log whether it worked:\n/review working high saves on this lift video\n/review not_working low watch %\n\nOr ask me to draft around it:\n/post tiktok workouts\n/post ig cooking\n/post ig humor"
-    );
-    return;
+  const media = pickMediaFromMessage(msg);
+  if (media) {
+    await replyMedia(ctx, chatId, msg, media, text);
+    // If they also sent a slash command in the caption, continue; else stop
+    if (!text.startsWith("/")) return;
   }
 
-  if (!text) return;
+  if (!text && !media) return;
 
   if (text === "/id" || text.startsWith("/id@")) {
     console.log(`[id] user=${userId} chat=${chatId} username=${msg.from?.username || "-"}`);
@@ -46,6 +45,8 @@ export async function handleUpdate(update, ctx) {
     );
     return;
   }
+
+  if (!text) return;
 
   const [rawCmd, ...args] = text.split(/\s+/);
   const cmd = rawCmd.split("@")[0].toLowerCase();
@@ -90,7 +91,7 @@ export async function handleUpdate(update, ctx) {
       default:
         if (cmd.startsWith("/")) {
           await ctx.sendMessage(chatId, "Unknown command. Try /help");
-        } else {
+        } else if (!media) {
           await ctx.sendMessage(chatId, answerFreeText(text));
         }
     }
@@ -99,6 +100,38 @@ export async function handleUpdate(update, ctx) {
     await ctx.sendMessage(
       chatId,
       `Something went wrong: ${err.message || "unknown error"}\nTry /help or /start`
+    );
+  }
+}
+
+async function replyMedia(ctx, chatId, msg, media, caption) {
+  try {
+    await ctx.sendChatAction(chatId, "upload_document");
+    await ctx.sendMessage(chatId, "Downloading your video/photo for review…");
+    const downloaded = await downloadTelegramFile(ctx.api, media.fileId, media.name);
+    const brand = loadBrand();
+    const review = reviewMedia(
+      {
+        type: media.type,
+        meta: media.meta,
+        caption,
+        localName: downloaded.localName
+      },
+      brand
+    );
+    const saved = {
+      type: media.type,
+      meta: media.meta,
+      localName: downloaded.localName,
+      localPath: downloaded.localPath
+    };
+    console.log(`[media] saved ${downloaded.localPath} pillar=${review.guessedPillar}`);
+    await ctx.sendMessage(chatId, formatMediaReviewMessage(review, saved));
+  } catch (err) {
+    console.error("media review failed:", err);
+    await ctx.sendMessage(
+      chatId,
+      `Got your media, but download/review failed: ${err.message}\n\nYou can still log it:\n/review working ...\n/review not_working ...`
     );
   }
 }
@@ -131,6 +164,8 @@ function startText() {
     brand.creator ? `Creator: ${brand.creator}` : null,
     `IG ${brand.handles?.instagram || brand.handle} · TikTok ${brand.handles?.tiktok || ""}`,
     "Brand: bodybuilding · gym humor · cooking (not CrossFit)",
+    "",
+    "Send a gym/cooking video here — I’ll download + review it.",
     "",
     "Commands:",
     "/week — 7-day calendar (every post reviewed)",
@@ -165,7 +200,8 @@ function helpText() {
 /id
 /help
 
-Every /post and /week run goes through the Review agent.`;
+Every /post and /week run goes through the Review agent.
+Send videos/photos directly — I download and review them.`;
 }
 
 async function replyPlan(ctx, chatId, args) {
