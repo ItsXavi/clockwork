@@ -4,7 +4,8 @@ import {
   runWeek,
   runPost,
   runGrow,
-  runExportBuffer
+  runExportBuffer,
+  runReview
 } from "./pipeline.js";
 
 const [cmd, ...rest] = process.argv.slice(2);
@@ -17,32 +18,36 @@ function flag(name, fallback) {
 
 function printHelp() {
   console.log(`
-Fitness Marketing Agents
+XFITTV Fitness Marketing Agents (bodybuilding · gym humor · cooking)
 
 Usage:
   npm start -- <command> [options]
 
 Commands:
   plan                 Weekly strategy (JSON to stdout)
-  week                 Full 7-day calendar + CSV export
-  post                 Single post draft
+  week                 Full 7-day calendar + CSV (every post reviewed)
+  post                 Single post draft (auto brand review)
   grow                 Follower growth playbook
+  review               Show memory / log what worked or didn't
   export               Alias for week (Buffer/Later CSV)
 
 Options:
   --weekOf YYYY-MM-DD  Calendar start date
   --goal               grow_followers | nurture_leads | launch_offer
-  --platform           instagram | tiktok | x | youtube_shorts
-  --pillar             workouts | nutrition | mindset | proof | community
-  --format             reel | carousel | short | story | thread
+  --platform           instagram | tiktok
+  --pillar             workouts | cooking | humor | mindset | proof | community
+  --format             reel | carousel | short | story
   --intensity          steady | sprint
+  --result             working | not_working  (with review)
+  --note               "what you learned"     (with review)
+  --hook               optional hook text     (with review)
 
 Examples:
-  npm run week -- --weekOf 2026-09-21 --goal grow_followers
-  npm run post -- --platform tiktok --pillar workouts
-  npm run grow -- --intensity sprint
-
-Edit brand voice in config/brand.json before generating.
+  npm run week -- --goal grow_followers
+  npm run post -- --platform tiktok --pillar cooking
+  npm run post -- --platform ig --pillar humor
+  node src/cli.js review
+  node src/cli.js review --result working --note "cooking reels got saves" --hook "High-protein dinner..."
 `);
 }
 
@@ -64,20 +69,35 @@ async function main() {
       });
       console.log(result.strategy.summary);
       console.log(`Posts planned: ${result.calendar.totals.posts}`);
+      if (result.review) {
+        console.log(`Review: ${result.review.approved}/${result.review.total} approved`);
+      }
       console.log(`Markdown: ${result.paths.mdPath}`);
       console.log(`CSV:      ${result.paths.csvPath}`);
       console.log(`Strategy: ${result.paths.strategyPath}`);
       break;
     }
     case "post": {
+      const platformRaw = flag("platform", "instagram");
+      const platform =
+        platformRaw === "ig" || platformRaw === "insta"
+          ? "instagram"
+          : platformRaw;
       const { post, path } = runPost({
-        platform: flag("platform", "instagram"),
+        platform,
         pillar: flag("pillar", "workouts"),
         format: flag("format", "reel"),
         seed: Number(flag("seed", String(Date.now() % 1000)))
       });
       console.log(`\n${post.hook}\n`);
       console.log(post.caption);
+      console.log(`\nReview: ${post.review?.verdict}`);
+      if (post.review?.warnings?.length) {
+        console.log("Warnings:", post.review.warnings.join("; "));
+      }
+      if (post.review?.issues?.length) {
+        console.log("Issues:", post.review.issues.join("; "));
+      }
       console.log(`\nSaved: ${path}`);
       break;
     }
@@ -87,6 +107,16 @@ async function main() {
       });
       console.log(playbook.principle);
       console.log(`Saved: ${path}`);
+      break;
+    }
+    case "review": {
+      const result = runReview({
+        result: flag("result"),
+        note: flag("note"),
+        hook: flag("hook")
+      });
+      console.log(result.brief);
+      if (result.saved) console.log("\nSaved to content-memory.json");
       break;
     }
     case "help":

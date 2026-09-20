@@ -1,0 +1,39 @@
+{
+  "brand": "XFITTV",
+  "updatedAt": "2026-09-20T21:32:31.302Z",
+  "positioning": {
+    "is": "bodybuilding + gym humor + cooking",
+    "isNot": "CrossFit / WOD / metcon brand"
+  },
+  "working": [
+    {
+      "insight": "Bodybuilding cues + clear exercise demos tend to get saves",
+      "evidence": "seed assumption — replace with real metrics via /review",
+      "status": "hypothesis"
+    },
+    {
+      "insight": "Gym humor Reels that feel lived-in (not forced meme pages) boost shares",
+      "evidence": "seed assumption",
+      "status": "hypothesis"
+    },
+    {
+      "insight": "Cooking/high-protein meal content brings a different audience and profile visits",
+      "evidence": "seed assumption",
+      "status": "hypothesis"
+    }
+  ],
+  "notWorking": [
+    {
+      "insight": "CrossFit / WOD language confuses the XFITTV bodybuilding brand",
+      "evidence": "creator direction — remove from all agents",
+      "status": "confirmed"
+    },
+    {
+      "insight": "Generic motivational fluff without a lift, joke, or meal underperforms",
+      "evidence": "seed assumption",
+      "status": "hypothesis"
+    }
+  ],
+  "postLog": [],
+  "notes": "Agents must read this file before drafting or approving posts. Update via /review after you paste metrics."
+}

@@ -47,24 +47,34 @@ export function buildWeeklyStrategy(brand, options = {}) {
     formats: p.formats,
     intent:
       p.id === "workouts"
-        ? "Teach a repeatable skill or session"
-        : p.id === "nutrition"
-          ? "Simplify one decision"
-          : p.id === "mindset"
-            ? "Normalize consistency"
-            : p.id === "proof"
-              ? "Show real progress"
-              : "Invite participation"
+        ? "Teach a hypertrophy session or cue"
+        : p.id === "cooking"
+          ? "Show a high-protein meal that tastes good"
+          : p.id === "humor"
+            ? "Relatable gym comedy with brand warmth"
+            : p.id === "mindset"
+              ? "Normalize discipline over motivation"
+              : p.id === "proof"
+                ? "Show physique/lift progress honestly"
+                : "Invite comments, tags, and keywords"
   }));
+
+  const memoryFocus = [
+    "Every post is reviewed against bodybuilding + humor + cooking (never CrossFit/WOD)",
+    "Double down on formats in content-memory.json → working",
+    "Kill patterns listed in content-memory.json → notWorking",
+    ...selected.focus
+  ];
 
   return {
     agent: "strategy",
     weekOf,
     brand: brand.brandName,
     niche: brand.niche,
+    discipline: brand.discipline || brand.niche,
     goal,
     northStar: selected.northStar,
-    weeklyFocus: selected.focus,
+    weeklyFocus: memoryFocus,
     kpis: selected.kpis,
     pillars: pillarPlan,
     cadence: brand.postingCadence,
@@ -72,8 +82,9 @@ export function buildWeeklyStrategy(brand, options = {}) {
     messagingGuardrails: {
       tone: brand.voice.tone,
       avoid: brand.voice.avoid,
-      phrases: brand.voice.signaturePhrases
+      phrases: brand.voice.signaturePhrases,
+      notThis: brand.notThis || []
     },
-    summary: `${brand.brandName} · ${weekOf} · Goal: ${goal.replace(/_/g, " ")}. Lead with ${brand.pillars[0].name.toLowerCase()} content, pair every post with one clear CTA, measure saves/shares over vanity likes.`
+    summary: `${brand.brandName} · ${weekOf} · Bodybuilding + gym humor + cooking · Goal: ${goal.replace(/_/g, " ")}. Lead with ${brand.pillars[0].name.toLowerCase()}, mix in meals and jokes, review every post before it ships.`
   };
 }

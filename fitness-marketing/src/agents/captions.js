@@ -7,12 +7,14 @@ export function buildHashtags(brand, hashtagConfig, platform, pillarId, seed = 0
   const rules = hashtagConfig.rules[platform] || { min: 3, max: 8 };
   const nicheTags =
     hashtagConfig.niche[brand.niche] ||
-    hashtagConfig.niche["functional fitness"] ||
+    hashtagConfig.niche.bodybuilding ||
     [];
+  const pillarTags = hashtagConfig.niche[pillarId] || [];
 
   const pool = [
     ...hashtagConfig.evergreen,
     ...nicheTags,
+    ...pillarTags,
     ...hashtagConfig.discovery,
     brand.niche.replace(/\s+/g, ""),
     pillarId

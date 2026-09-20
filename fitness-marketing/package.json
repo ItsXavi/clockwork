@@ -12,6 +12,7 @@
     "week": "node src/cli.js week",
     "post": "node src/cli.js post",
     "grow": "node src/cli.js grow",
+    "review": "node src/cli.js review",
     "export": "node src/cli.js export",
     "bot": "node src/telegram/bot.js"
   },

@@ -1,10 +1,13 @@
 # XFITTV — Content Calendar
-Week of **2026-09-21**
+Week of **2026-09-20**
 
 ## Strategy
-XFITTV · 2026-09-21 · Goal: grow followers. Lead with wods & sessions content, pair every post with one clear CTA, measure saves/shares over vanity likes.
+XFITTV · 2026-09-20 · Bodybuilding + gym humor + cooking · Goal: grow followers. Lead with bodybuilding training, mix in meals and jokes, review every post before it ships.
 
 **Weekly focus**
+- Every post is reviewed against bodybuilding + humor + cooking (never CrossFit/WOD)
+- Double down on formats in content-memory.json → working
+- Kill patterns listed in content-memory.json → notWorking
 - Hook-first Reels/Shorts that stop the scroll
 - Saveable carousels (programs, checklists, myths)
 - Clear CTAs that invite follows and comments
@@ -14,296 +17,296 @@ KPIs: profile visits, saves, shares, follower net growth, avg watch %
 
 ## Schedule (13 posts)
 
+### Sunday · 2026-09-20
+1. **instagram** · short · 17:30 · _Bodybuilding Training_ · ✅ review 100
+   - Hook: Push day volume that actually builds your chest
+   - Visual: Pattern interrupt first frame → demo/joke → punchy caption VO → follow end
+   - Caption:
+
+```
+Push day volume that actually builds your chest
+
+Push / pull / legs template. Log your top sets. Leave 1–2 reps in the tank. Film the working sets, not just the flex.
+
+XFITTV — lifts, laughs, and meals that hit.
+
+DM PROTEIN for this week’s meal ideas.
+
+.
+.
+.
+@xfittv · XFitTV · Xavier Castro · bodybuilding
+
+#gymmotivation #musclebuilding #liftheavy #bodybuilder #brosplit #pushpulllegs #classicphysique #gymtok
+```
+
+2. **tiktok** · reel · 12:00 · _Bodybuilding Training_ · ✅ review 100
+   - Hook: Back thickness: 4 moves, no fluff
+   - Visual: Talking-head hook (0–2s) → lift/cook demo or joke beat → on-screen text → end card CTA
+   - Caption:
+
+```
+Back thickness: 4 moves, no fluff — Hypertrophy with personality.
+
+Warm-up → compound focus (3–4 working sets) → isolation finishers. Chase the pump with controlled eccentrics. Progressive overload weekly.
+
+Save this for your next push day.
+
+@xfittvx
+
+#gymlife #hypertrophy #fitness #gymmotivation
+```
+
+Stories:
+- Poll: push day or pull day?
+- Gym humor story — ‘waiting for the bench’ add yours
+
 ### Monday · 2026-09-21
-1. **instagram** · carousel · 17:30 · _Fuel & Recovery_
-   - Hook: Simple grocery list for CrossFit weeks
+1. **instagram** · carousel · 17:30 · _Cooking & High-Protein Meals_ · ✅ review 100
+   - Hook: Gym bro cooking: 20 minutes, macros on point
    - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
    - Caption:
 
 ```
-Simple grocery list for CrossFit weeks
+Gym bro cooking: 20 minutes, macros on point
 
-Pre-session: easy carbs + a little protein. Post-session: protein + carbs within the hour when you can.
+Prep the protein in bulk, sauce it different each night. Same chicken energy, different personality.
 
-Hit play. Train with XFITTV.
+Train hard. Eat well. Laugh at the gym.
 
-Follow @xfittv for daily training energy.
+Save this for your next push day.
 
 .
 .
 .
-@xfittv · XFitTV · Xavier Castro · crossfit hiit
+@xfittv · XFitTV · Xavier Castro · bodybuilding
 
-#crossfittok #reelsfitness #workoutroutine #homegym #crossfithiit #nutrition #fitness #crossfit
+#classicphysique #gymtok #xfittv #gainz #highprotein #mealprep #fitfood #proteincooking #gymmeals
 ```
 
-2. **tiktok** · reel · 12:00 · _Fuel & Recovery_
-   - Hook: Hydration rule before you hit the clock
-   - Visual: Talking-head hook (0–2s) → demo or B-roll → on-screen text beats → end card CTA
+2. **tiktok** · story · 12:00 · _Cooking & High-Protein Meals_ · ✅ review 100
+   - Hook: Gym bro cooking: 20 minutes, macros on point
+   - Visual: Poll or question sticker → quick tip or meme → swipe/DM CTA
    - Caption:
 
 ```
-Hydration rule before you hit the clock — Scale it. Finish it. Come back stronger.
+Gym bro cooking: 20 minutes, macros on point — XFITTV — lifts, laughs, and meals that hit.
 
-Protein at every meal. Carbs around training. Water before caffeine. Recovery starts on the plate.
+Protein first, flavor second, aesthetics third. Season properly. Weigh once, cook often. Your cut shouldn’t taste like cardboard.
 
-Comment WOD and I’ll drop the full breakdown.
+Tag your gym buddy who needs this.
 
 @xfittvx
 
-#functionaltraining #metcon #boxlife #enginework
+#fitfood #proteincooking #gymmeals #macrofriendly #fittok
 ```
 
 Stories:
-- Poll: training today — morning or evening?
-- Behind the sessions B-roll + ‘add yours’
+- Quick tip sticker: Hypertrophy with personality.
+- FAQ: ‘How much protein per day to start?’
 
 ### Tuesday · 2026-09-22
-1. **instagram** · carousel · 17:30 · _Mindset & Grind_
-   - Hook: Intensity with intention — not chaos
-   - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
+1. **instagram** · reel · 17:30 · _Cooking & High-Protein Meals_ · ✅ review 100
+   - Hook: The breakfast I eat before heavy upper days
+   - Visual: Talking-head hook (0–2s) → lift/cook demo or joke beat → on-screen text → end card CTA
    - Caption:
 
 ```
-Intensity with intention — not chaos
+The breakfast I eat before heavy upper days
 
-Identity line: ‘I train with intention.’ Scale when needed. Still finish.
+Prep the protein in bulk, sauce it different each night. Same chicken energy, different personality.
 
-Scale it. Finish it. Come back stronger.
+Hypertrophy with personality.
 
-Comment WOD and I’ll drop the full breakdown.
+Tag your gym buddy who needs this.
 
 .
 .
 .
-@xfittv · XFitTV · Xavier Castro · crossfit hiit
+@xfittv · XFitTV · Xavier Castro · bodybuilding
 
-#crossfittraining #hiitworkout #functionaltraining #metcon #boxlife #enginework #xfittv #fittok #gymtok
+#classicphysique #gymtok #xfittv #gainz #highprotein #mealprep #fitfood #proteincooking #gymmeals #macrofriendly
 ```
 
-2. **tiktok** · reel · 12:00 · _Mindset & Grind_
-   - Hook: Consistency beats one heroic WOD
-   - Visual: Talking-head hook (0–2s) → demo or B-roll → on-screen text beats → end card CTA
+2. **tiktok** · story · 12:00 · _Gym Humor_ · ✅ review 100
+   - Hook: POV: someone is curling in the squat rack again
+   - Visual: Poll or question sticker → quick tip or meme → swipe/DM CTA
    - Caption:
 
 ```
-Consistency beats one heroic WOD — Hit play. Train with XFITTV.
+POV: someone is curling in the squat rack again — Train hard. Eat well. Laugh at the gym.
 
-Identity line: ‘I train with intention.’ Scale when needed. Still finish.
+Gym culture is wild. We roast it lovingly — then we still hit the session. XFITTV humor with a bodybuilding backbone.
 
-Save this WOD for your next session.
+Comment RECIPE and I’ll drop the full meal.
 
 @xfittvx
 
-#hiit #wod #workoutmotivation #gymlife #strengthandconditioning
+#bodybuilder #brosplit #pushpulllegs
 ```
 
 Stories:
-- Quick tip sticker: Scale it. Finish it. Come back stronger.
-- FAQ: ‘How many days/week to start?’
+- Gym humor story — ‘waiting for the bench’ add yours
+- CTA: DM ‘PROTEIN’ for XFITTV High-Protein Meal Pack
 
 ### Wednesday · 2026-09-23
-1. **instagram** · carousel · 17:30 · _PRs & Progress_
-   - Hook: Form fix that unlocked the lift
-   - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
+1. **instagram** · short · 17:30 · _Gym Humor_ · ✅ review 100
+   - Hook: Things you’ll only understand if you live in the gym
+   - Visual: Pattern interrupt first frame → demo/joke → punchy caption VO → follow end
    - Caption:
 
 ```
-Form fix that unlocked the lift
+Things you’ll only understand if you live in the gym
 
-We didn’t chase random intensity — we chased repeatable sessions. Splits dropped when attendance got honest.
+If you’ve ever waited 15 minutes for a bench while someone films a set of 3… this one’s for you. Laugh, then go lift.
 
-Intensity with intention.
+Train hard. Eat well. Laugh at the gym.
 
-Follow @xfittvx on TikTok for more sessions.
+DM PROTEIN for this week’s meal ideas.
 
 .
 .
 .
-@xfittv · XFitTV · Xavier Castro · crossfit hiit
+@xfittv · XFitTV · Xavier Castro · bodybuilding
 
-#workoutroutine #homegym #crossfithiit #proof #fitness #crossfit #hiit #wod #workoutmotivation #gymlife
+#classicphysique #gymtok #xfittv #gainz #gymhumor #gymmemes #fitnesshumor #gymfails
 ```
 
-2. **tiktok** · story · 12:00 · _PRs & Progress_
-   - Hook: Same WOD, better splits — 8 weeks later
-   - Visual: Poll or question sticker → quick tip → swipe/DM CTA
+2. **tiktok** · reel · 12:00 · _Mindset & Discipline_ · ✅ review 100
+   - Hook: Missed a session? Here’s the minimum effective day
+   - Visual: Talking-head hook (0–2s) → lift/cook demo or joke beat → on-screen text → end card CTA
    - Caption:
 
 ```
-Same WOD, better splits — 8 weeks later — Scale it. Finish it. Come back stronger.
+Missed a session? Here’s the minimum effective day — XFITTV — lifts, laughs, and meals that hit.
 
-One metric for 30 days: weekly sessions completed. Capacity followed consistency.
+Shrink the session until it’s non-negotiable. A short hypertrophy day finished beats the perfect week skipped.
 
-Tag your training partner and run it together.
+Follow @xfittvx on TikTok for more gym humor.
 
 @xfittvx
 
-#homegym #crossfithiit #proof
+#gymmotivation #musclebuilding #liftheavy #bodybuilder
 ```
 
 Stories:
-- Behind the sessions B-roll + ‘add yours’
-- CTA: DM ‘PLAN’ for XFITTV Weekly WOD Pack
+- FAQ: ‘How much protein per day to start?’
+- Cooking B-roll: seasoning the chicken + macro sticker
 
 ### Thursday · 2026-09-24
-1. **instagram** · story · 17:30 · _Community & CTA_
-   - Hook: Comment WOD for the full session breakdown
-   - Visual: Poll or question sticker → quick tip → swipe/DM CTA
-   - Caption:
-
-```
-Comment WOD for the full session breakdown
-
-What’s your limiter — engine, strength, or recovery? Reply and I’ll give a fix.
-
-Hit play. Train with XFITTV.
-
-Follow @xfittv for daily training energy.
-
-.
-.
-.
-@xfittv · XFitTV · Xavier Castro · crossfit hiit
-
-#crossfittraining #hiitworkout #functionaltraining #metcon #boxlife #enginework #xfittv #fittok
-```
-
-2. **tiktok** · carousel · 12:00 · _WODs & Sessions_
-   - Hook: 12-minute engine builder you can film anywhere
+1. **instagram** · carousel · 17:30 · _Physique & Progress_ · ✅ review 100
+   - Hook: Form fix that unlocked the pump
    - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
    - Caption:
 
 ```
-12-minute engine builder you can film anywhere — Intensity with intention.
+Form fix that unlocked the pump
 
-Day template: power → strength → sweat. Same skeleton, swap movements. That’s how XFITTV stays progressive.
+Cue fixed. Load moved. Pump improved. That’s the real content.
 
-DM START for this week’s training focus.
+Hypertrophy with personality.
+
+Save this for your next push day.
+
+.
+.
+.
+@xfittv · XFitTV · Xavier Castro · bodybuilding
+
+#bodybuilding #gymlife #hypertrophy #fitness #gymmotivation #musclebuilding #liftheavy #bodybuilder #brosplit
+```
+
+2. **tiktok** · live · 12:00 · _Community & CTA_ · ✅ review 100
+   - Hook: Ask me anything: bodybuilding & meal prep
+   - Visual: Agenda → Q&A (training + cooking) → offer close
+   - Caption:
+
+```
+Ask me anything: bodybuilding & meal prep — Train hard. Eat well. Laugh at the gym.
+
+This week: 4 training days + 2 cooked meals filmed. Comment DONE. Accountability > hype.
+
+Follow @xfittv for lifts, laughs, and meals.
 
 @xfittvx
 
-#workoutroutine #homegym #crossfithiit #workouts
+#musclebuilding #liftheavy #bodybuilder #brosplit #pushpulllegs
 ```
 
 Stories:
-- FAQ: ‘How many days/week to start?’
-- Poll: training today — morning or evening?
+- CTA: DM ‘PROTEIN’ for XFITTV High-Protein Meal Pack
+- Poll: push day or pull day?
 
 ### Friday · 2026-09-25
-1. **instagram** · short · 17:30 · _WODs & Sessions_
-   - Hook: 3 movements. One clock. Full-send conditioning
-   - Visual: Pattern interrupt first frame → demo → punchy caption VO → subscribe/follow end
+1. **instagram** · reel · 17:30 · _Mindset & Discipline_ · ✅ review 100
+   - Hook: Discipline beats motivation when the gym is empty
+   - Visual: Talking-head hook (0–2s) → lift/cook demo or joke beat → on-screen text → end card CTA
    - Caption:
 
 ```
-3 movements. One clock. Full-send conditioning
+Discipline beats motivation when the gym is empty
 
-EMOM or AMRAP structure. Pick movements you can repeat under fatigue. Leave one rep in the tank on the strength piece.
+Track inputs: sessions, protein, sleep. The physique follows the boring calendar.
 
-Scale it. Finish it. Come back stronger.
+XFITTV — lifts, laughs, and meals that hit.
 
-Comment WOD and I’ll drop the full breakdown.
+Follow @xfittv for lifts, laughs, and meals.
 
 .
 .
 .
-@xfittv · XFitTV · Xavier Castro · crossfit hiit
+@xfittv · XFitTV · Xavier Castro · bodybuilding
 
-#workoutroutine #homegym #crossfithiit #workouts #fitness #crossfit #hiit #wod #workoutmotivation
+#reelsfitness #workoutroutine #mealpreptiktok #cooking #mindset #bodybuilding #gymlife #hypertrophy #fitness #gymmotivation
 ```
 
-2. **tiktok** · reel · 12:00 · _WODs & Sessions_
-   - Hook: 3 movements. One clock. Full-send conditioning
-   - Visual: Talking-head hook (0–2s) → demo or B-roll → on-screen text beats → end card CTA
+2. **tiktok** · carousel · 12:00 · _Physique & Progress_ · ✅ review 100
+   - Hook: What changed when I tracked protein honestly
+   - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
    - Caption:
 
 ```
-3 movements. One clock. Full-send conditioning — Hit play. Train with XFITTV.
+What changed when I tracked protein honestly — Hypertrophy with personality.
 
-Day template: power → strength → sweat. Same skeleton, swap movements. That’s how XFITTV stays progressive.
+One metric for 30 days: weekly sessions + daily protein. Physique notes follow.
 
-Save this WOD for your next session.
+Comment RECIPE and I’ll drop the full meal.
 
 @xfittvx
 
-#xfittv #fittok #gymtok #crossfittok #reelsfitness
+#liftheavy #bodybuilder #brosplit
 ```
 
 Stories:
-- CTA: DM ‘PLAN’ for XFITTV Weekly WOD Pack
-- Quick tip sticker: Scale it. Finish it. Come back stronger.
+- Cooking B-roll: seasoning the chicken + macro sticker
+- Quick tip sticker: XFITTV — lifts, laughs, and meals that hit.
 
 ### Saturday · 2026-09-26
-1. **instagram** · carousel · 17:30 · _WODs & Sessions_
-   - Hook: Stop random metcons — run this session instead
-   - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
+1. **instagram** · live · 17:30 · _Community & CTA_ · ✅ review 100
+   - Hook: This week’s XFITTV challenge — comment DONE
+   - Visual: Agenda → Q&A (training + cooking) → offer close
    - Caption:
 
 ```
-Stop random metcons — run this session instead
+This week’s XFITTV challenge — comment DONE
 
-Warm-up 5 → strength focus 12 → metcon 10–14. Scale loads so your form survives the clock. Film the work. Post the finish.
+What’s your limiter — recovery, protein, or skipping legs? Reply and I’ll roast you helpfully.
 
-Hit play. Train with XFITTV.
+Hypertrophy with personality.
 
-Save this WOD for your next session.
+Comment RECIPE and I’ll drop the full meal.
 
 .
 .
 .
-@xfittv · XFitTV · Xavier Castro · crossfit hiit
+@xfittv · XFitTV · Xavier Castro · bodybuilding
 
-#crossfittraining #hiitworkout #functionaltraining #metcon #boxlife #enginework #xfittv #fittok #gymtok #crossfittok
-```
-
-2. **tiktok** · short · 12:00 · _WODs & Sessions_
-   - Hook: Today’s XFITTV WOD — scale it and send it
-   - Visual: Pattern interrupt first frame → demo → punchy caption VO → subscribe/follow end
-   - Caption:
-
-```
-Today’s XFITTV WOD — scale it and send it — Intensity with intention.
-
-Day template: power → strength → sweat. Same skeleton, swap movements. That’s how XFITTV stays progressive.
-
-Tag your training partner and run it together.
-
-@xfittvx
-
-#hiitworkout #functionaltraining #metcon
+#classicphysique #gymtok #xfittv #gainz #fittok #reelsfitness #workoutroutine #mealpreptiktok
 ```
 
 Stories:
-- Poll: training today — morning or evening?
-- Behind the sessions B-roll + ‘add yours’
-
-### Sunday · 2026-09-27
-1. **instagram** · carousel · 17:30 · _Fuel & Recovery_
-   - Hook: Recovery plate after a brutal metcon
-   - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
-   - Caption:
-
-```
-Recovery plate after a brutal metcon
-
-Keep a default breakfast and lunch. Decide dinner once. High training volume hates decision fatigue.
-
-Scale it. Finish it. Come back stronger.
-
-Tag your training partner and run it together.
-
-.
-.
-.
-@xfittv · XFitTV · Xavier Castro · crossfit hiit
-
-#workoutroutine #homegym #crossfithiit #nutrition #fitness #crossfit #hiit #wod
-```
-
-Stories:
-- Quick tip sticker: Hit play. Train with XFITTV.
-- FAQ: ‘How many days/week to start?’
+- Poll: push day or pull day?
+- Gym humor story — ‘waiting for the bench’ add yours
 
 ---
 Times are local suggestions — adjust to your analytics peak windows.

@@ -1,52 +1,46 @@
 {
   "evergreen": [
-    "fitness",
-    "crossfit",
-    "hiit",
-    "wod",
-    "workoutmotivation",
+    "bodybuilding",
     "gymlife",
-    "strengthandconditioning"
+    "hypertrophy",
+    "fitness",
+    "gymmotivation",
+    "musclebuilding",
+    "liftheavy"
   ],
   "niche": {
-    "crossfit hiit": [
-      "crossfittraining",
-      "hiitworkout",
-      "functionaltraining",
-      "metcon",
-      "boxlife",
-      "enginework",
-      "xfittv"
+    "bodybuilding": [
+      "bodybuilder",
+      "brosplit",
+      "pushpulllegs",
+      "classicphysique",
+      "gymtok",
+      "xfittv",
+      "gainz"
     ],
-    "functional fitness": [
-      "functionalfitness",
-      "strengthandconditioning",
-      "mobilitytraining",
-      "athletetraining",
-      "hybridathlete"
+    "cooking": [
+      "highprotein",
+      "mealprep",
+      "fitfood",
+      "proteincooking",
+      "gymmeals",
+      "macrofriendly"
     ],
-    "fat loss": [
-      "fatlosstips",
-      "bodyrecomp",
-      "weightlossjourney",
-      "leanmuscle",
-      "hiitcardio"
-    ],
-    "strength": [
-      "strengthgains",
-      "progressiveoverload",
-      "liftheavy",
-      "compoundlifts",
-      "olympiclifting"
+    "humor": [
+      "gymhumor",
+      "gymmemes",
+      "fitnesshumor",
+      "gymfails",
+      "relatablegym"
     ]
   },
   "discovery": [
     "fittok",
     "gymtok",
-    "crossfittok",
     "reelsfitness",
     "workoutroutine",
-    "homegym"
+    "mealpreptiktok",
+    "cooking"
   ],
   "rules": {
     "instagram": { "min": 8, "max": 15 },

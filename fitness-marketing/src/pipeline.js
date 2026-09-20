@@ -8,6 +8,13 @@ import {
   calendarToMarkdown,
   calendarToCsv
 } from "./agents/scheduler.js";
+import {
+  reviewAndAttach,
+  loadMemory,
+  memoryBrief,
+  recordPerformance,
+  ensureMemoryFile
+} from "./agents/review.js";
 
 export function loadBrand() {
   return loadJson("config/brand.json");
@@ -18,11 +25,14 @@ export function loadHashtags() {
 }
 
 export function runStrategy(opts = {}) {
+  ensureMemoryFile();
   const brand = loadBrand();
-  return buildWeeklyStrategy(brand, opts);
+  const strategy = buildWeeklyStrategy(brand, opts);
+  return { ...strategy, memoryBrief: memoryBrief(loadMemory()) };
 }
 
 export function runWeek(opts = {}) {
+  ensureMemoryFile();
   const brand = loadBrand();
   const hashtags = loadHashtags();
   const strategy = buildWeeklyStrategy(brand, opts);
@@ -34,15 +44,25 @@ export function runWeek(opts = {}) {
   const csvPath = writeOutput(`calendar-${stamp}.csv`, csv);
   const strategyPath = writeOutput(
     `strategy-${stamp}.json`,
-    JSON.stringify(strategy, null, 2)
+    JSON.stringify({ ...strategy, memoryBrief: memoryBrief() }, null, 2)
   );
-  return { strategy, calendar, paths: { mdPath, csvPath, strategyPath } };
+  const approved = calendar.days
+    .flatMap((d) => d.posts)
+    .filter((p) => p.review?.pass !== false).length;
+  const total = calendar.totals.posts;
+  return {
+    strategy,
+    calendar,
+    review: { approved, total, memoryBrief: memoryBrief() },
+    paths: { mdPath, csvPath, strategyPath }
+  };
 }
 
 export function runPost(opts = {}) {
+  ensureMemoryFile();
   const brand = loadBrand();
   const hashtags = loadHashtags();
-  const post = enrichPostWithTags(
+  let post = enrichPostWithTags(
     generatePost(brand, {
       pillarId: opts.pillar || "workouts",
       platform: opts.platform || "instagram",
@@ -53,6 +73,7 @@ export function runPost(opts = {}) {
     hashtags,
     opts.seed ?? 1
   );
+  post = reviewAndAttach(post, brand);
   const path = writeOutput(
     `post-${post.platform}-${todayISO()}.json`,
     JSON.stringify(post, null, 2)
@@ -61,13 +82,28 @@ export function runPost(opts = {}) {
 }
 
 export function runGrow(opts = {}) {
+  ensureMemoryFile();
   const brand = loadBrand();
   const playbook = buildGrowthPlaybook(brand, opts);
   const path = writeOutput(
     `growth-playbook-${todayISO()}.md`,
-    growthToMarkdown(playbook)
+    growthToMarkdown(playbook) + "\n\n## Content memory\n\n" + memoryBrief()
   );
-  return { playbook, path };
+  return { playbook, path, memoryBrief: memoryBrief() };
+}
+
+export function runReview(opts = {}) {
+  ensureMemoryFile();
+  if (opts.note && opts.result) {
+    const memory = recordPerformance({
+      result: opts.result,
+      note: opts.note,
+      hook: opts.hook || "",
+      metrics: opts.metrics || null
+    });
+    return { memory, brief: memoryBrief(memory), saved: true };
+  }
+  return { memory: loadMemory(), brief: memoryBrief(), saved: false };
 }
 
 export function runExportBuffer(opts = {}) {

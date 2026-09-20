@@ -2,16 +2,15 @@
 
 ## Instagram / Meta (@xfittv)
 XFITTV | Xavier Castro
-CrossFit-style HIIT, strength & conditioning on camera
-Free weekly WOD pack → DM START
+Bodybuilding · gym humor · high-protein cooking
+Meals + lifts → DM PROTEIN
 
 ## TikTok (@xfittvx)
 XFITTV · Xavier Castro
-Hit play. Train with me.
-Follow for WODs, metcons & engine work 💪
-Comment WOD for the full session
+Lifts. Laughs. Meals that hit.
+Follow for bodybuilding, gym humor & cooking
 
 ## Option — Challenge-led
-XFITTV 7-Day Engine Challenge
-Scale it. Finish it. Come back stronger.
-Comment START to join
+XFITTV Push Week
+Train hard. Eat well. Laugh at the gym.
+Comment DONE after each session

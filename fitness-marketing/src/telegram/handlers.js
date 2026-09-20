@@ -6,7 +6,8 @@ import {
   runWeek,
   runPost,
   runGrow,
-  runStrategy
+  runStrategy,
+  runReview
 } from "../pipeline.js";
 
 export async function handleUpdate(update, ctx) {
@@ -26,6 +27,7 @@ export async function handleUpdate(update, ctx) {
   }
 
   if (text === "/id" || text.startsWith("/id@")) {
+    console.log(`[id] user=${userId} chat=${chatId} username=${msg.from?.username || "-"}`);
     await ctx.sendMessage(
       chatId,
       `Your Telegram user id: ${userId}\nChat id: ${chatId}\n\nAdd it to TELEGRAM_ALLOWED_USERS to lock the bot.`
@@ -35,6 +37,7 @@ export async function handleUpdate(update, ctx) {
 
   const [rawCmd, ...args] = text.split(/\s+/);
   const cmd = rawCmd.split("@")[0].toLowerCase();
+  console.log(`[cmd] ${cmd} user=${userId} chat=${chatId} args=${JSON.stringify(args)}`);
 
   try {
     switch (cmd) {
@@ -64,13 +67,21 @@ export async function handleUpdate(update, ctx) {
         await ctx.sendChatAction(chatId);
         await replyToday(ctx, chatId);
         break;
+      case "/review":
+        await ctx.sendChatAction(chatId);
+        await replyReview(ctx, chatId, args, text);
+        break;
+      case "/memory":
+        await ctx.sendChatAction(chatId);
+        await replyReview(ctx, chatId, [], "/review");
+        break;
       default:
         if (cmd.startsWith("/")) {
           await ctx.sendMessage(chatId, "Unknown command. Try /help");
         } else {
           await ctx.sendMessage(
             chatId,
-            "I’m the XFITTV agent bot. Use /week, /post, /grow, or /help."
+            "XFITTV agents here — bodybuilding, gym humor, and cooking.\nUse /week, /post, /grow, /review, or /help."
           );
         }
     }
@@ -89,14 +100,19 @@ function startText() {
     `🏋️ ${brand.brandName} agents online`,
     brand.creator ? `Creator: ${brand.creator}` : null,
     `IG ${brand.handles?.instagram || brand.handle} · TikTok ${brand.handles?.tiktok || ""}`,
+    "Brand: bodybuilding · gym humor · cooking (not CrossFit)",
     "",
-    "Talk to the bots with commands:",
-    "/week — 7-day content calendar + files",
-    "/post ig workouts — draft one Reel/TikTok",
-    "/grow — follower growth playbook",
+    "Commands:",
+    "/week — 7-day calendar (every post reviewed)",
+    "/post ig workouts | cooking | humor",
+    "/post tiktok cooking",
+    "/grow — growth playbook",
     "/plan — weekly strategy",
-    "/today — today’s planned posts",
-    "/id — your Telegram user id (for private mode)",
+    "/today — today’s posts",
+    "/review — what’s working / not working",
+    "/review working cooking reels got saves",
+    "/review not_working generic motivation flopped",
+    "/id — your Telegram user id",
     "",
     "Type /help for details."
   ]
@@ -105,54 +121,55 @@ function startText() {
 }
 
 function helpText() {
-  return `XFITTV bot commands
+  return `XFITTV bot (bodybuilding + humor + cooking)
 
 /week [goal]
-  Goals: grow_followers | nurture_leads | launch_offer
-  Example: /week grow_followers
-
-/post [platform] [pillar]
-  Platforms: ig | tiktok
-  Pillars: workouts | nutrition | mindset | proof | community
-  Example: /post tiktok workouts
-
+/post [ig|tiktok] [workouts|cooking|humor|mindset|proof|community]
 /grow [steady|sprint]
-  Example: /grow sprint
-
 /plan [goal]
 /today
+/review
+/review working <what worked>
+/review not_working <what failed>
+/memory
 /id
-/help`;
+/help
+
+Every /post and /week run goes through the Review agent.`;
 }
 
 async function replyPlan(ctx, chatId, args) {
   const goal = args[0] || "grow_followers";
   const strategy = runStrategy({ goal });
   const lines = [
-    `📋 Strategy · ${strategy.brand}`,
+    `📋 Strategy · ${strategy.brand} · ${strategy.discipline || strategy.niche}`,
     strategy.summary,
     "",
     "Focus:",
-    ...strategy.weeklyFocus.map((f) => `• ${f}`),
+    ...strategy.weeklyFocus.slice(0, 6).map((f) => `• ${f}`),
     "",
-    `KPIs: ${strategy.kpis.join(", ")}`
+    strategy.memoryBrief || ""
   ];
   await ctx.sendMessage(chatId, lines.join("\n"));
 }
 
 async function replyWeek(ctx, chatId, args) {
   const goal = args[0] || "grow_followers";
-  const { strategy, calendar, paths } = runWeek({ goal });
+  const { strategy, calendar, paths, review } = runWeek({ goal });
   const preview = [
     `📅 Week of ${calendar.weekOf} · ${calendar.totals.posts} posts`,
     strategy.summary,
+    "",
+    review
+      ? `Review: ${review.approved}/${review.total} approved`
+      : "Review: complete",
     "",
     "By platform:",
     ...Object.entries(calendar.totals.byPlatform).map(
       ([p, n]) => `• ${p}: ${n}`
     ),
     "",
-    "Sending markdown + CSV files next…"
+    "Sending markdown + CSV…"
   ].join("\n");
   await ctx.sendMessage(chatId, preview);
   await ctx.sendDocument(chatId, paths.mdPath, "Full calendar (markdown)");
@@ -173,37 +190,64 @@ async function replyPost(ctx, chatId, args) {
   const { post, path } = runPost({ platform, pillar, format });
   const body = [
     `🎬 ${post.platform} · ${post.format} · ${post.pillar}`,
+    post.review?.verdict ? `Review: ${post.review.verdict}` : null,
+    post.review?.warnings?.length
+      ? `Notes: ${post.review.warnings.join("; ")}`
+      : null,
+    post.review?.issues?.length
+      ? `Issues: ${post.review.issues.join("; ")}`
+      : null,
     "",
     `Hook: ${post.hook}`,
     "",
     post.caption,
     "",
     `Visual: ${post.visualDirection}`
-  ].join("\n");
+  ]
+    .filter(Boolean)
+    .join("\n");
   await ctx.sendMessage(chatId, body);
-  await ctx.sendDocument(chatId, path, "Post JSON");
+  await ctx.sendDocument(chatId, path, "Post JSON (includes review)");
 }
 
 async function replyGrow(ctx, chatId, args) {
   const intensity = args[0] || "steady";
-  const { playbook, path } = runGrow({ intensity });
+  const { playbook, path, memoryBrief } = runGrow({ intensity });
   const lines = [
     `📈 Growth · ${playbook.brand} (${playbook.intensity})`,
     "",
     playbook.principle,
     "",
     "Today:",
-    ...playbook.dailyRhythm.map(
-      (b) => `• ${b.block}: ${b.actions[0]}`
-    ),
+    ...playbook.dailyRhythm.map((b) => `• ${b.block}: ${b.actions[0]}`),
     "",
-    "This week’s experiments:",
-    ...playbook.weeklyExperiments.slice(0, 3).map((e) => `• ${e}`),
+    memoryBrief || "",
     "",
     "Full playbook file coming…"
   ];
   await ctx.sendMessage(chatId, lines.join("\n"));
   await ctx.sendDocument(chatId, path, "Growth playbook");
+}
+
+async function replyReview(ctx, chatId, args, rawText = "") {
+  // /review working cooking reels got saves
+  // /review not_working generic motivation flopped
+  if (args[0] === "working" || args[0] === "not_working") {
+    const result = args[0] === "working" ? "working" : "not_working";
+    const note = args.slice(1).join(" ") || "creator feedback";
+    const { brief } = runReview({ result, note });
+    await ctx.sendMessage(
+      chatId,
+      `Saved to memory as ${result}.\n\n${brief}`
+    );
+    return;
+  }
+
+  const { brief } = runReview({});
+  await ctx.sendMessage(
+    chatId,
+    `${brief}\n\nLog results:\n/review working <note>\n/review not_working <note>`
+  );
 }
 
 async function replyToday(ctx, chatId) {
@@ -267,6 +311,5 @@ function extractDaySection(markdown, weekday, isoDate) {
     }
   }
   const chunk = lines.slice(start, end).join("\n").trim();
-  // Keep Telegram-friendly: trim code fences content length
   return chunk.length > 3500 ? chunk.slice(0, 3500) + "\n…" : chunk;
 }

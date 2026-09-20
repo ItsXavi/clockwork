@@ -8,61 +8,88 @@
     "meta": "@xfittv",
     "tiktok": "@xfittvx"
   },
-  "niche": "crossfit hiit",
+  "niche": "bodybuilding",
+  "discipline": "bodybuilding",
+  "notThis": [
+    "crossfit",
+    "wod",
+    "metcon",
+    "hiit-only conditioning",
+    "box life",
+    "AMRAP race energy as the brand"
+  ],
   "audience": {
-    "primary": "athletes and everyday lifters who want CrossFit-style conditioning, strength, and high-energy training they can follow on camera",
+    "primary": "lifters who want bodybuilding training, gym humor, and real-food cooking content they can actually use",
     "painPoints": [
-      "random WODs with no progression",
-      "burning out from all-out intensity every day",
-      "not knowing how to scale movements",
-      "inconsistent training when life gets busy"
+      "programs that ignore hypertrophy basics",
+      "boring fitness content with zero personality",
+      "meal prep that tastes like cardboard",
+      "not knowing what to train when they hit the gym"
     ],
     "desires": [
-      "get fitter, stronger, and more conditioned",
-      "train with clear sessions they can film and finish",
-      "build a community around XFITTV workouts",
-      "look and feel athletic without overcomplicating it"
+      "build muscle with clear bodybuilding sessions",
+      "laugh while they learn (gym humor)",
+      "cook high-protein meals that still slap",
+      "follow Xavier / XFITTV for training + food + vibes"
     ]
   },
   "voice": {
-    "tone": ["high-energy", "direct", "motivational", "coach-on-camera"],
-    "avoid": ["shame", "miracle claims", "medical advice", "gatekeeping beginners"],
+    "tone": [
+      "bodybuilder",
+      "gym-humor",
+      "real-talk",
+      "on-camera energy",
+      "foodie-lifter"
+    ],
+    "avoid": [
+      "shame",
+      "miracle claims",
+      "medical advice",
+      "CrossFit jargon (WOD, metcon, EMOM as brand language)",
+      "gatekeeping beginners"
+    ],
     "signaturePhrases": [
-      "Hit play. Train with XFITTV.",
-      "Scale it. Finish it. Come back stronger.",
-      "Intensity with intention."
+      "Train hard. Eat well. Laugh at the gym.",
+      "Hypertrophy with personality.",
+      "XFITTV — lifts, laughs, and meals that hit."
     ]
   },
   "platforms": ["instagram", "tiktok"],
   "pillars": [
     {
       "id": "workouts",
-      "name": "WODs & Sessions",
-      "share": 0.4,
+      "name": "Bodybuilding Training",
+      "share": 0.35,
       "formats": ["reel", "carousel", "short"]
     },
     {
-      "id": "nutrition",
-      "name": "Fuel & Recovery",
-      "share": 0.15,
-      "formats": ["carousel", "reel", "story"]
+      "id": "cooking",
+      "name": "Cooking & High-Protein Meals",
+      "share": 0.25,
+      "formats": ["reel", "carousel", "story"]
+    },
+    {
+      "id": "humor",
+      "name": "Gym Humor",
+      "share": 0.2,
+      "formats": ["reel", "story", "short"]
     },
     {
       "id": "mindset",
-      "name": "Mindset & Grind",
-      "share": 0.2,
+      "name": "Mindset & Discipline",
+      "share": 0.1,
       "formats": ["reel", "story", "carousel"]
     },
     {
       "id": "proof",
-      "name": "PRs & Progress",
-      "share": 0.15,
+      "name": "Physique & Progress",
+      "share": 0.05,
       "formats": ["reel", "carousel", "story"]
     },
     {
       "id": "community",
       "name": "Community & CTA",
-      "share": 0.1,
+      "share": 0.05,
       "formats": ["story", "reel", "live"]
     }
   ],
@@ -71,23 +98,40 @@
     "tiktok": { "videos": 5 }
   },
   "ctaLibrary": [
-    "Follow @xfittv for daily training energy.",
-    "Save this WOD for your next session.",
-    "Comment WOD and I’ll drop the full breakdown.",
-    "Tag your training partner and run it together.",
-    "Follow @xfittvx on TikTok for more sessions.",
-    "DM START for this week’s training focus."
+    "Follow @xfittv for lifts, laughs, and meals.",
+    "Save this for your next push day.",
+    "Comment RECIPE and I’ll drop the full meal.",
+    "Tag your gym buddy who needs this.",
+    "Follow @xfittvx on TikTok for more gym humor.",
+    "DM PROTEIN for this week’s meal ideas."
   ],
   "offers": [
     {
-      "name": "XFITTV Weekly WOD Pack",
+      "name": "XFITTV High-Protein Meal Pack",
       "type": "lead_magnet",
       "hook": "free"
     },
     {
-      "name": "XFITTV Coaching / Programming",
+      "name": "XFITTV Bodybuilding Coaching",
       "type": "core_offer",
       "hook": "limited spots"
     }
-  ]
+  ],
+  "reviewRules": {
+    "mustMatch": [
+      "bodybuilding / hypertrophy framing",
+      "on-brand voice (humor allowed, not cringe spam)",
+      "clear CTA when the format needs one"
+    ],
+    "mustAvoid": [
+      "CrossFit / WOD / metcon as the main identity",
+      "shame-based body talk",
+      "miracle fat-loss or steroid-push claims"
+    ],
+    "mixTargets": {
+      "workouts": "about 1 in 3 posts",
+      "cooking": "about 1 in 4 posts",
+      "humor": "about 1 in 5 posts should lead with humor"
+    }
+  }
 }

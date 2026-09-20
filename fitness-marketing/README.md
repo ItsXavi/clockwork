@@ -33,6 +33,10 @@ Configured for **XFitTV (Xavier Castro)**:
 | Instagram / Meta | `@xfittv` |
 | TikTok | `@xfittvx` |
 
+**Positioning:** bodybuilding · gym humor · high-protein cooking (not CrossFit/WOD).
+
+Every `/post` and `/week` run is checked by the **Review** agent against `config/content-memory.json` (what’s working / not working). Log results with `/review` in Telegram or `npm run review`.
+
 Edit `config/brand.json` anytime to tweak voice, pillars, CTAs, and offers.
 
 ## Quick start

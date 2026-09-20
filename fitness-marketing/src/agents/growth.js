@@ -34,8 +34,9 @@ export function buildGrowthPlaybook(brand, options = {}) {
       block: "Learn (10 min)",
       actions: [
         "Note top 3 hooks by watch % / saves",
+        "Log winners/losers with /review so all agents remember",
         "Kill formats under 20% average watch after 5 posts",
-        "Double down on the winning pillar next week"
+        "Double down on bodybuilding demos, humor, or cooking — whichever won"
       ]
     }
   ];
@@ -61,11 +62,11 @@ export function buildGrowthPlaybook(brand, options = {}) {
     `Instagram name: ${brand.displayName || brand.brandName}${brand.creator ? ` | ${brand.creator}` : ""}`,
     `Handles: IG/Meta ${ig} · TikTok ${tt}`,
     `Name/niche line: ${brand.brandName} | ${brand.niche}`,
-    "Bio line 1: who you help + outcome (CrossFit-style / HIIT conditioning)",
-    "Bio line 2: proof or differentiator (on-camera sessions, community energy)",
-    "Bio line 3: CTA (free WOD pack / DM START)",
-    "Pinned posts: best Reel + weekly WOD carousel + PR/proof",
-    "Highlight covers: Start Here, WODs, Fuel, PRs, Live"
+    "Bio line 1: who you help + outcome (bodybuilding / muscle)",
+    "Bio line 2: gym humor + high-protein cooking",
+    "Bio line 3: CTA (meal pack / DM PROTEIN)",
+    "Pinned posts: best training Reel + cooking Reel + humor Reel",
+    "Highlight covers: Start Here, Training, Meals, Humor, PRs"
   ];
 
   const doNot = [

@@ -1,6 +1,7 @@
 import { addDays, weekdayName, todayISO } from "../lib/io.js";
 import { generateDayPack } from "./content.js";
 import { enrichPostWithTags } from "./captions.js";
+import { reviewPost, loadMemory, logReviewedPost } from "./review.js";
 
 const BEST_TIMES = {
   instagram: "17:30",
@@ -24,13 +25,20 @@ export function buildWeekCalendar(brand, hashtagConfig, options = {}) {
     const rawPosts = generateDayPack(brand, i + date.getDate(), platformsToday);
     const posts = rawPosts.map((p, idx) => {
       const enriched = enrichPostWithTags(p, brand, hashtagConfig, i * 10 + idx);
-      return {
+      const memory = loadMemory();
+      const review = reviewPost(enriched, brand, memory);
+      const scheduled = {
         ...enriched,
         date: dateStr,
         weekday: weekdayName(date),
         scheduledTime: BEST_TIMES[p.platform] || "12:00",
-        status: "draft"
+        status: review.pass ? "draft" : "needs_revision",
+        review
       };
+      logReviewedPost(scheduled, memory, {
+        outcome: review.pass ? "calendar_approved" : "calendar_rejected"
+      });
+      return scheduled;
     });
 
     days.push({
@@ -65,11 +73,12 @@ function platformsForDay(brand, dayIndex) {
 
 function storyIdeas(brand, seed) {
   const ideas = [
-    "Poll: training today — morning or evening?",
+    "Poll: push day or pull day?",
     `Quick tip sticker: ${brand.voice.signaturePhrases[seed % brand.voice.signaturePhrases.length]}`,
-    "Behind the sessions B-roll + ‘add yours’",
-    "FAQ: ‘How many days/week to start?’",
-    `CTA: DM ‘PLAN’ for ${brand.offers[0]?.name || "the free plan"}`
+    "Gym humor story — ‘waiting for the bench’ add yours",
+    "FAQ: ‘How much protein per day to start?’",
+    `CTA: DM ‘PROTEIN’ for ${brand.offers[0]?.name || "meal ideas"}`,
+    "Cooking B-roll: seasoning the chicken + macro sticker"
   ];
   return [ideas[seed % ideas.length], ideas[(seed + 2) % ideas.length]];
 }
@@ -107,11 +116,22 @@ export function calendarToMarkdown(calendar, strategy) {
   calendar.days.forEach((day) => {
     lines.push(`### ${day.weekday} · ${day.date}`);
     day.posts.forEach((p, i) => {
+      const stamp = p.review
+        ? p.review.pass
+          ? `✅ review ${p.review.score}`
+          : `❌ review ${p.review.score}`
+        : "review pending";
       lines.push(
-        `${i + 1}. **${p.platform}** · ${p.format} · ${p.scheduledTime} · _${p.pillar}_`
+        `${i + 1}. **${p.platform}** · ${p.format} · ${p.scheduledTime} · _${p.pillar}_ · ${stamp}`
       );
       lines.push(`   - Hook: ${p.hook}`);
       lines.push(`   - Visual: ${p.visualDirection}`);
+      if (p.review?.warnings?.length) {
+        lines.push(`   - Review notes: ${p.review.warnings.join("; ")}`);
+      }
+      if (p.review?.issues?.length) {
+        lines.push(`   - Review issues: ${p.review.issues.join("; ")}`);
+      }
       lines.push("   - Caption:");
       lines.push("");
       lines.push("```");

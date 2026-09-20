@@ -17,14 +17,15 @@ Intensity: **steady**
 
 ### Engage (25–40 min)
 - Reply to every comment on your last 3 posts within 60 minutes of posting
-- Engage thoughtfully on 10–15 accounts in crossfit hiit (coaches, clients, adjacent creators)
+- Engage thoughtfully on 10–15 accounts in bodybuilding (coaches, clients, adjacent creators)
 - Leave specific compliments or form cues — not ‘🔥🔥’ spam
 - Answer DMs; route keyword replies to the lead magnet
 
 ### Learn (10 min)
 - Note top 3 hooks by watch % / saves
+- Log winners/losers with /review so all agents remember
 - Kill formats under 20% average watch after 5 posts
-- Double down on the winning pillar next week
+- Double down on bodybuilding demos, humor, or cooking — whichever won
 
 ## Weekly experiments
 - A/B test 2 hook styles on the same tip
@@ -35,16 +36,16 @@ Intensity: **steady**
 ## Profile optimization
 - Instagram name: XFitTV | Xavier Castro
 - Handles: IG/Meta @xfittv · TikTok @xfittvx
-- Name/niche line: XFITTV | crossfit hiit
-- Bio line 1: who you help + outcome (CrossFit-style / HIIT conditioning)
-- Bio line 2: proof or differentiator (on-camera sessions, community energy)
-- Bio line 3: CTA (free WOD pack / DM START)
-- Pinned posts: best Reel + weekly WOD carousel + PR/proof
-- Highlight covers: Start Here, WODs, Fuel, PRs, Live
+- Name/niche line: XFITTV | bodybuilding
+- Bio line 1: who you help + outcome (bodybuilding / muscle)
+- Bio line 2: gym humor + high-protein cooking
+- Bio line 3: CTA (meal pack / DM PROTEIN)
+- Pinned posts: best training Reel + cooking Reel + humor Reel
+- Highlight covers: Start Here, Training, Meals, Humor, PRs
 
 ## Funnel
-- **XFITTV Weekly WOD Pack** (lead_magnet): Content CTA → keyword comment/DM → deliver free plan → nurture sequence → coaching invite
-- **XFITTV Coaching / Programming** (core_offer): Proof content → Stories FAQ → application / checkout → onboarding
+- **XFITTV High-Protein Meal Pack** (lead_magnet): Content CTA → keyword comment/DM → deliver free plan → nurture sequence → coaching invite
+- **XFITTV Bodybuilding Coaching** (core_offer): Proof content → Stories FAQ → application / checkout → onboarding
 
 ## Do not
 - Do not buy followers, bots, or engagement pods
@@ -58,3 +59,20 @@ Intensity: **steady**
 - Hit 10 save-worthy carousels
 - Convert profile visits with a clear free offer
 - Build a reply habit that trains the algorithm you’re a real creator
+
+
+## Content memory
+
+XFITTV memory · bodybuilding + gym humor + cooking
+Not: CrossFit / WOD / metcon brand
+
+What's working:
+• (hypothesis) Bodybuilding cues + clear exercise demos tend to get saves
+• (hypothesis) Gym humor Reels that feel lived-in (not forced meme pages) boost shares
+• (hypothesis) Cooking/high-protein meal content brings a different audience and profile visits
+
+What's not working:
+• (confirmed) CrossFit / WOD language confuses the XFITTV bodybuilding brand
+• (hypothesis) Generic motivational fluff without a lift, joke, or meal underperforms
+
+Logged posts: 17

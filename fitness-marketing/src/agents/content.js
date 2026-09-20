@@ -2,77 +2,99 @@ import { pick, seededIndex } from "../lib/io.js";
 
 const HOOKS = {
   workouts: [
-    "Today’s XFITTV WOD — scale it and send it",
-    "12-minute engine builder you can film anywhere",
-    "Stop random metcons — run this session instead",
-    "3 movements. One clock. Full-send conditioning",
-    "Busy day protocol: strength + sweat in 30"
+    "Push day volume that actually builds your chest",
+    "Stop ego lifting — chase this rep range instead",
+    "The bodybuilding session I film on busy weeks",
+    "Back thickness: 4 moves, no fluff",
+    "Leg day structure for hypertrophy (not just sore)"
   ],
-  nutrition: [
-    "Pre-WOD fuel without the crash",
-    "Protein targets for high-volume training",
-    "Recovery plate after a brutal metcon",
-    "Hydration rule before you hit the clock",
-    "Simple grocery list for CrossFit weeks"
+  cooking: [
+    "High-protein dinner that doesn’t taste like meal prep sadness",
+    "Gym bro cooking: 20 minutes, macros on point",
+    "The breakfast I eat before heavy upper days",
+    "Meal prep that still slaps on day 4",
+    "Protein dessert that won’t ruin your cut"
+  ],
+  humor: [
+    "Things you’ll only understand if you live in the gym",
+    "POV: someone is curling in the squat rack again",
+    "Gym timing olympics — waiting for one bench",
+    "The mirror check nobody admits they do",
+    "Cardio people vs bodybuilders (friendly fire)"
   ],
   mindset: [
-    "Scale smart. Ego stays outside the box",
-    "Missed a day? Here’s the 15-minute rescue session",
-    "Intensity with intention — not chaos",
-    "The identity shift: show up on the hard days",
-    "Consistency beats one heroic WOD"
+    "Missed a session? Here’s the minimum effective day",
+    "Discipline beats motivation when the gym is empty",
+    "Progress photos lie weekly — consistency doesn’t",
+    "Train for the physique, not the algorithm",
+    "Boring sets. Big results."
   ],
   proof: [
-    "PR breakdown: what actually changed",
-    "Same WOD, better splits — 8 weeks later",
-    "Form fix that unlocked the lift",
-    "Engine progress you can feel on the clock",
-    "Before the highlight reel: the boring reps"
+    "Same lift, better control — 8 weeks later",
+    "What changed when I tracked protein honestly",
+    "Physique note: lighting optional, effort required",
+    "Form fix that unlocked the pump",
+    "Before the highlight reel: the quiet sets"
   ],
   community: [
     "This week’s XFITTV challenge — comment DONE",
-    "Ask me anything: scaling & pacing",
-    "Tag your partner and race this WOD",
-    "Drop your biggest limiter below",
-    "Comment WOD for the full session breakdown"
+    "Ask me anything: bodybuilding & meal prep",
+    "Tag your gym buddy who skips legs",
+    "Drop your favorite high-protein meal below",
+    "Comment RECIPE for the full meal breakdown"
+  ],
+  // legacy alias if old calendars reference nutrition
+  nutrition: [
+    "High-protein dinner that doesn’t taste like meal prep sadness",
+    "Gym bro cooking: 20 minutes, macros on point",
+    "The breakfast I eat before heavy upper days"
   ]
 };
 
 const BODIES = {
   workouts: [
-    "Warm-up 5 → strength focus 12 → metcon 10–14. Scale loads so your form survives the clock. Film the work. Post the finish.",
-    "EMOM or AMRAP structure. Pick movements you can repeat under fatigue. Leave one rep in the tank on the strength piece.",
-    "Day template: power → strength → sweat. Same skeleton, swap movements. That’s how XFITTV stays progressive."
+    "Warm-up → compound focus (3–4 working sets) → isolation finishers. Chase the pump with controlled eccentrics. Progressive overload weekly.",
+    "Push / pull / legs template. Log your top sets. Leave 1–2 reps in the tank. Film the working sets, not just the flex.",
+    "Hypertrophy range 6–12 on main lifts, 10–15 on accessories. Rest enough to keep form clean. That’s bodybuilding."
   ],
-  nutrition: [
-    "Protein at every meal. Carbs around training. Water before caffeine. Recovery starts on the plate.",
-    "Pre-session: easy carbs + a little protein. Post-session: protein + carbs within the hour when you can.",
-    "Keep a default breakfast and lunch. Decide dinner once. High training volume hates decision fatigue."
+  cooking: [
+    "Protein first, flavor second, aesthetics third. Season properly. Weigh once, cook often. Your cut shouldn’t taste like cardboard.",
+    "One skillet, one protein, one carb, one vegetable. 20–25 minutes. Macros you can repeat on training days.",
+    "Prep the protein in bulk, sauce it different each night. Same chicken energy, different personality."
+  ],
+  humor: [
+    "If you’ve ever waited 15 minutes for a bench while someone films a set of 3… this one’s for you. Laugh, then go lift.",
+    "Gym culture is wild. We roast it lovingly — then we still hit the session. XFITTV humor with a bodybuilding backbone.",
+    "Relatable gym moments > fake motivational speeches. If it happened to you this week, share it."
   ],
   mindset: [
-    "Shrink the session until it’s non-negotiable. A scaled WOD finished beats a hero WOD skipped.",
-    "Track inputs: sessions done, sleep, protein days. The clock times follow the habits.",
-    "Identity line: ‘I train with intention.’ Scale when needed. Still finish."
+    "Shrink the session until it’s non-negotiable. A short hypertrophy day finished beats the perfect week skipped.",
+    "Track inputs: sessions, protein, sleep. The physique follows the boring calendar.",
+    "Identity line: ‘I’m a bodybuilder who shows up.’ Humor optional. Consistency not optional."
   ],
   proof: [
-    "We didn’t chase random intensity — we chased repeatable sessions. Splits dropped when attendance got honest.",
-    "One metric for 30 days: weekly sessions completed. Capacity followed consistency.",
-    "Cue fixed. Load moved. That’s the real transformation content."
+    "We didn’t chase random intensity — we chased progressive overload and protein. The mirror caught up later.",
+    "One metric for 30 days: weekly sessions + daily protein. Physique notes follow.",
+    "Cue fixed. Load moved. Pump improved. That’s the real content."
   ],
   community: [
-    "This week: 4 sessions. Comment DONE after each. Accountability > hype.",
-    "Want the full WOD? Comment the keyword. I’ll send the breakdown.",
-    "What’s your limiter — engine, strength, or recovery? Reply and I’ll give a fix."
+    "This week: 4 training days + 2 cooked meals filmed. Comment DONE. Accountability > hype.",
+    "Want the recipe or the full session? Comment the keyword and I’ll send it.",
+    "What’s your limiter — recovery, protein, or skipping legs? Reply and I’ll roast you helpfully."
+  ],
+  nutrition: [
+    "Protein first, flavor second. Season properly. Your cut shouldn’t taste like cardboard.",
+    "One skillet, one protein, one carb, one vegetable. Macros you can repeat."
   ]
 };
 
 const VISUALS = {
-  reel: "Talking-head hook (0–2s) → demo or B-roll → on-screen text beats → end card CTA",
+  reel: "Talking-head hook (0–2s) → lift/cook demo or joke beat → on-screen text → end card CTA",
   carousel: "Cover hook → 5–7 value slides → final CTA slide with keyword",
-  short: "Pattern interrupt first frame → demo → punchy caption VO → subscribe/follow end",
-  story: "Poll or question sticker → quick tip → swipe/DM CTA",
-  thread: "Hook tweet → 4–6 value posts → CTA reply or bookmark",
-  live: "Agenda slide → Q&A → offer/lead magnet close"
+  short: "Pattern interrupt first frame → demo/joke → punchy caption VO → follow end",
+  story: "Poll or question sticker → quick tip or meme → swipe/DM CTA",
+  thread: "Hook → 4–6 value posts → CTA",
+  live: "Agenda → Q&A (training + cooking) → offer close"
 };
 
 /**
@@ -91,25 +113,39 @@ export function generatePost(brand, { pillarId, platform, format, daySeed = 0 })
   );
 
   const caption = buildCaption({ brand, platform, hook, body, cta, phrase });
+  const resolvedFormat = format || pick(pillar.formats, daySeed);
 
   return {
     agent: "content",
     pillar: pillar.name,
     pillarId: pillar.id,
     platform,
-    format: format || pick(pillar.formats, daySeed),
+    format: resolvedFormat,
     hook,
     caption,
     onScreenText: [hook, phrase, cta],
-    visualDirection: VISUALS[format] || VISUALS.reel,
-    filmingNotes: [
-      "Front-facing light; vertical 9:16",
-      "Hook in first 1–2 seconds with text overlay",
-      "Show the movement or tip, don’t just talk",
-      "End freeze-frame with CTA"
-    ],
+    visualDirection: VISUALS[resolvedFormat] || VISUALS.reel,
+    filmingNotes: filmingNotesFor(pillar.id),
     compliance: brand.voice.avoid
   };
+}
+
+function filmingNotesFor(pillarId) {
+  const base = [
+    "Front-facing light; vertical 9:16",
+    "Hook in first 1–2 seconds with text overlay",
+    "End freeze-frame with CTA"
+  ];
+  if (pillarId === "cooking") {
+    return [...base, "Show the food — sizzle, plate, bite/macros on screen"];
+  }
+  if (pillarId === "humor") {
+    return [...base, "Commit to the bit; cut fast; don’t over-explain the joke"];
+  }
+  if (pillarId === "workouts") {
+    return [...base, "Show working sets / form cues — not just talking"];
+  }
+  return [...base, "Show the tip, don’t just talk"];
 }
 
 function platformHandle(brand, platform) {
@@ -118,7 +154,9 @@ function platformHandle(brand, platform) {
 
 function buildCaption({ brand, platform, hook, body, cta, phrase }) {
   const handle = platformHandle(brand, platform);
-  const credit = brand.creator ? `${brand.displayName || brand.brandName} · ${brand.creator}` : brand.brandName;
+  const credit = brand.creator
+    ? `${brand.displayName || brand.brandName} · ${brand.creator}`
+    : brand.brandName;
 
   if (platform === "x") {
     return `${hook}\n\n${body}\n\n${phrase}\n\n${cta}`;
@@ -126,7 +164,6 @@ function buildCaption({ brand, platform, hook, body, cta, phrase }) {
   if (platform === "tiktok" || platform === "youtube_shorts") {
     return `${hook} — ${phrase}\n\n${body}\n\n${cta}\n\n${handle}`.trim();
   }
-  // instagram / meta default
   return `${hook}\n\n${body}\n\n${phrase}\n\n${cta}\n\n.\n.\n.\n${handle} · ${credit} · ${brand.niche}`;
 }
 
@@ -160,7 +197,6 @@ function weightedPillarOrder(pillars, seed) {
     const n = Math.max(1, Math.round(p.share * 10));
     for (let i = 0; i < n; i++) expanded.push(p);
   });
-  // rotate by seed for variety
   const start = seededIndex(seed, expanded.length);
   return [...expanded.slice(start), ...expanded.slice(0, start)];
 }

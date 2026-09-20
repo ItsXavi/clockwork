@@ -48,11 +48,12 @@ else console.log("No TELEGRAM_ALLOWED_USERS set — anyone who finds the bot can
 await setCommands([
   { command: "start", description: "Welcome + how to use" },
   { command: "help", description: "Command list" },
-  { command: "week", description: "Generate 7-day content calendar" },
-  { command: "post", description: "Draft one post (IG or TikTok)" },
+  { command: "week", description: "7-day calendar (reviewed)" },
+  { command: "post", description: "Draft post: workouts|cooking|humor" },
   { command: "grow", description: "Follower growth playbook" },
   { command: "plan", description: "Weekly strategy summary" },
-  { command: "today", description: "Today’s posts from latest week plan" }
+  { command: "today", description: "Today’s planned posts" },
+  { command: "review", description: "What’s working / not working" }
 ]);
 
 while (!stopping) {
