@@ -1,0 +1,45 @@
+{
+  "evergreen": [
+    "fitness",
+    "strengthtraining",
+    "workoutmotivation",
+    "fitlife",
+    "gymtips"
+  ],
+  "niche": {
+    "functional fitness": [
+      "functionalfitness",
+      "strengthandconditioning",
+      "mobilitytraining",
+      "athletetraining",
+      "hybridathlete"
+    ],
+    "fat loss": [
+      "fatlosstips",
+      "calorie deficit",
+      "bodyrecomp",
+      "weightlossjourney",
+      "leanmuscle"
+    ],
+    "strength": [
+      "powerlifting",
+      "strengthgains",
+      "progressiveoverload",
+      "liftheavy",
+      "compoundlifts"
+    ]
+  },
+  "discovery": [
+    "fittok",
+    "gymtok",
+    "reelsfitness",
+    "homegym",
+    "workoutroutine"
+  ],
+  "rules": {
+    "instagram": { "min": 8, "max": 15 },
+    "tiktok": { "min": 3, "max": 5 },
+    "x": { "min": 0, "max": 2 },
+    "youtube_shorts": { "min": 3, "max": 5 }
+  }
+}

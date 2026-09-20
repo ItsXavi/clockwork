@@ -1,0 +1,85 @@
+{
+  "brandName": "Peak Form",
+  "handle": "@peakform",
+  "niche": "functional fitness",
+  "audience": {
+    "primary": "busy professionals 25–40 who want strength and energy without living in the gym",
+    "painPoints": [
+      "no time for 90-minute workouts",
+      "plateaus and inconsistent motivation",
+      "confusion about programming and nutrition"
+    ],
+    "desires": [
+      "look athletic in clothes",
+      "feel strong and confident",
+      "simple routines that fit a real schedule"
+    ]
+  },
+  "voice": {
+    "tone": ["direct", "encouraging", "no-fluff", "coach-like"],
+    "avoid": ["shame", "miracle claims", "bro-speak overload", "medical advice"],
+    "signaturePhrases": [
+      "Show up for 30 minutes.",
+      "Strength is a skill.",
+      "Consistency beats intensity."
+    ]
+  },
+  "platforms": ["instagram", "tiktok", "x", "youtube_shorts"],
+  "pillars": [
+    {
+      "id": "workouts",
+      "name": "Workouts & Programming",
+      "share": 0.35,
+      "formats": ["reel", "carousel", "short"]
+    },
+    {
+      "id": "nutrition",
+      "name": "Nutrition Made Simple",
+      "share": 0.2,
+      "formats": ["carousel", "reel", "thread"]
+    },
+    {
+      "id": "mindset",
+      "name": "Mindset & Habits",
+      "share": 0.2,
+      "formats": ["reel", "story", "carousel"]
+    },
+    {
+      "id": "proof",
+      "name": "Proof & Transformations",
+      "share": 0.15,
+      "formats": ["reel", "carousel", "story"]
+    },
+    {
+      "id": "community",
+      "name": "Community & CTA",
+      "share": 0.1,
+      "formats": ["story", "reel", "live"]
+    }
+  ],
+  "postingCadence": {
+    "instagram": { "feed": 5, "reels": 5, "stories": 7 },
+    "tiktok": { "videos": 5 },
+    "x": { "posts": 7, "threads": 2 },
+    "youtube_shorts": { "shorts": 3 }
+  },
+  "ctaLibrary": [
+    "Save this for your next session.",
+    "Follow for weekly programming you can actually finish.",
+    "Comment START and I’ll drop the full plan.",
+    "Share this with your training partner.",
+    "DM me ‘PLAN’ for the free 7-day starter."
+  ],
+  "offers": [
+    {
+      "name": "7-Day Starter Plan",
+      "type": "lead_magnet",
+      "hook": "free"
+    },
+    {
+      "name": "Peak Form Coaching",
+      "type": "core_offer",
+      "hook": "limited spots"
+    }
+  ]
+}
