@@ -12,11 +12,11 @@ import {
 
 export async function handleUpdate(update, ctx) {
   const msg = update.message;
-  if (!msg?.text) return;
+  if (!msg) return;
 
   const chatId = msg.chat.id;
   const userId = String(msg.from?.id || "");
-  const text = msg.text.trim();
+  const text = (msg.text || msg.caption || "").trim();
 
   if (ctx.allowed.size && !ctx.allowed.has(userId)) {
     await ctx.sendMessage(
@@ -25,6 +25,18 @@ export async function handleUpdate(update, ctx) {
     );
     return;
   }
+
+  // Media without a slash command — acknowledge so it never feels dead
+  if (!text && (msg.video || msg.photo || msg.document || msg.voice)) {
+    console.log(`[media] user=${userId} type=${msg.video ? "video" : msg.photo ? "photo" : "other"}`);
+    await ctx.sendMessage(
+      chatId,
+      "Got your media ✅\n\nTo log whether it worked:\n/review working high saves on this lift video\n/review not_working low watch %\n\nOr ask me to draft around it:\n/post tiktok workouts\n/post ig cooking\n/post ig humor"
+    );
+    return;
+  }
+
+  if (!text) return;
 
   if (text === "/id" || text.startsWith("/id@")) {
     console.log(`[id] user=${userId} chat=${chatId} username=${msg.from?.username || "-"}`);
@@ -79,19 +91,37 @@ export async function handleUpdate(update, ctx) {
         if (cmd.startsWith("/")) {
           await ctx.sendMessage(chatId, "Unknown command. Try /help");
         } else {
-          await ctx.sendMessage(
-            chatId,
-            "XFITTV agents here — bodybuilding, gym humor, and cooking.\nUse /week, /post, /grow, /review, or /help."
-          );
+          await ctx.sendMessage(chatId, answerFreeText(text));
         }
     }
   } catch (err) {
     console.error(err);
     await ctx.sendMessage(
       chatId,
-      `Something went wrong: ${err.message || "unknown error"}`
+      `Something went wrong: ${err.message || "unknown error"}\nTry /help or /start`
     );
   }
+}
+
+function answerFreeText(text) {
+  const t = text.toLowerCase();
+  if (/\bwod\b/.test(t)) {
+    return "WOD means Workout of the Day — CrossFit language.\n\nXFITTV is bodybuilding + gym humor + cooking, so we don’t use WOD as brand speak. Say “session”, “push day”, or “hypertrophy workout” instead.";
+  }
+  if (/\bcta\b|call to action/.test(t)) {
+    return "CTA = Call To Action — the line that tells people what to do next (Follow, Comment RECIPE, Save, DM PROTEIN).";
+  }
+  return [
+    "I heard you. I’m the XFITTV agent bot (bodybuilding · humor · cooking).",
+    "",
+    "Try:",
+    "/post tiktok workouts",
+    "/post ig cooking",
+    "/post ig humor",
+    "/week",
+    "/review",
+    "/help"
+  ].join("\n");
 }
 
 function startText() {
@@ -177,17 +207,47 @@ async function replyWeek(ctx, chatId, args) {
 }
 
 async function replyPost(ctx, chatId, args) {
-  const platformRaw = (args[0] || "instagram").toLowerCase();
+  const platforms = new Set(["instagram", "ig", "insta", "tiktok", "tt"]);
+  const pillars = new Set([
+    "workouts",
+    "cooking",
+    "humor",
+    "mindset",
+    "proof",
+    "community",
+    "nutrition"
+  ]);
+
+  let platformRaw = "instagram";
+  let pillar = "workouts";
+  let format;
+
+  if (args[0] && platforms.has(args[0].toLowerCase())) {
+    platformRaw = args[0].toLowerCase();
+    if (args[1] && pillars.has(args[1].toLowerCase())) pillar = args[1].toLowerCase();
+    format = args[2];
+  } else if (args[0] && pillars.has(args[0].toLowerCase())) {
+    pillar = args[0].toLowerCase();
+    format = args[1];
+  } else if (args[0]) {
+    await ctx.sendMessage(
+      chatId,
+      `Not sure about “${args[0]}”.\n\nTry:\n/post ig workouts\n/post tiktok cooking\n/post ig humor`
+    );
+    return;
+  }
+
   const platform =
     platformRaw === "ig" || platformRaw === "insta"
       ? "instagram"
       : platformRaw === "tt"
         ? "tiktok"
         : platformRaw;
-  const pillar = args[1] || "workouts";
-  const format = platform === "tiktok" ? "reel" : args[2] || "reel";
+  if (pillar === "nutrition") pillar = "cooking";
+  const resolvedFormat = format || (platform === "tiktok" ? "reel" : "reel");
 
-  const { post, path } = runPost({ platform, pillar, format });
+  await ctx.sendMessage(chatId, `Drafting ${platform} · ${pillar}…`);
+  const { post, path } = runPost({ platform, pillar, format: resolvedFormat });
   const body = [
     `🎬 ${post.platform} · ${post.format} · ${post.pillar}`,
     post.review?.verdict ? `Review: ${post.review.verdict}` : null,
