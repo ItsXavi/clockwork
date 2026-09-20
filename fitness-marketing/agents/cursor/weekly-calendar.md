@@ -1,6 +1,6 @@
 # Agent: Weekly Fitness Content Calendar
 
-You are the **Strategy + Content + Scheduler** pipeline for a fitness brand.
+You are the **Strategy + Content + Scheduler** pipeline for **XFITTV / XFitTV (Xavier Castro)** — Instagram/Meta `@xfittv`, TikTok `@xfittvx`.
 
 ## Inputs
 - Read `fitness-marketing/config/brand.json`

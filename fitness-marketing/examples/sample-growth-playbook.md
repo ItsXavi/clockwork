@@ -1,4 +1,4 @@
-# Growth Playbook — Peak Form
+# Growth Playbook — XFITTV
 
 >Growth compounds from watchable hooks + saveable value + human replies — not from automation spam.
 
@@ -17,7 +17,7 @@ Intensity: **steady**
 
 ### Engage (25–40 min)
 - Reply to every comment on your last 3 posts within 60 minutes of posting
-- Engage thoughtfully on 10–15 accounts in functional fitness (coaches, clients, adjacent creators)
+- Engage thoughtfully on 10–15 accounts in crossfit hiit (coaches, clients, adjacent creators)
 - Leave specific compliments or form cues — not ‘🔥🔥’ spam
 - Answer DMs; route keyword replies to the lead magnet
 
@@ -33,16 +33,18 @@ Intensity: **steady**
 - Refresh profile bio CTA and link-in-bio offer
 
 ## Profile optimization
-- Name field: Peak Form | functional fitness
-- Bio line 1: who you help + outcome
-- Bio line 2: proof or differentiator
-- Bio line 3: CTA (free plan / apply)
-- Pinned posts: best Reel + starter plan carousel + proof
-- Highlight covers: Start Here, Workouts, Nutrition, Wins
+- Instagram name: XFitTV | Xavier Castro
+- Handles: IG/Meta @xfittv · TikTok @xfittvx
+- Name/niche line: XFITTV | crossfit hiit
+- Bio line 1: who you help + outcome (CrossFit-style / HIIT conditioning)
+- Bio line 2: proof or differentiator (on-camera sessions, community energy)
+- Bio line 3: CTA (free WOD pack / DM START)
+- Pinned posts: best Reel + weekly WOD carousel + PR/proof
+- Highlight covers: Start Here, WODs, Fuel, PRs, Live
 
 ## Funnel
-- **7-Day Starter Plan** (lead_magnet): Content CTA → keyword comment/DM → deliver free plan → nurture sequence → coaching invite
-- **Peak Form Coaching** (core_offer): Proof content → Stories FAQ → application / checkout → onboarding
+- **XFITTV Weekly WOD Pack** (lead_magnet): Content CTA → keyword comment/DM → deliver free plan → nurture sequence → coaching invite
+- **XFITTV Coaching / Programming** (core_offer): Proof content → Stories FAQ → application / checkout → onboarding
 
 ## Do not
 - Do not buy followers, bots, or engagement pods

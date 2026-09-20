@@ -14,6 +14,17 @@ Built as a practical automation layer you can run locally, wire to Buffer/Later,
 | **Scheduler** | 7-day calendar + CSV for Buffer / Later / Meta schedulers |
 | **Growth** | Daily rhythm, experiments, profile/funnel, anti-spam rules |
 
+## Brand: XFITTV
+
+Configured for **XFitTV (Xavier Castro)**:
+
+| Platform | Handle |
+| --- | --- |
+| Instagram / Meta | `@xfittv` |
+| TikTok | `@xfittvx` |
+
+Edit `config/brand.json` anytime to tweak voice, pillars, CTAs, and offers.
+
 ## Quick start
 
 ```bash
@@ -30,14 +41,14 @@ Outputs land in `output/`:
 - `growth-playbook-*.md` — engagement + growth playbook
 - `strategy-*.json` — machine-readable strategy
 
-## Customize your brand
+## Customize further
 
-Edit `config/brand.json`:
+`config/brand.json` is already set to XFITTV. Tweak as needed:
 
-- brand name, handle, niche, audience
-- voice / tone / phrases to avoid
+- audience pain points / desires
+- signature phrases and CTA library
 - content pillars + posting cadence
-- CTAs and offers
+- offers (WOD pack, coaching)
 
 Edit `config/hashtags.json` for niche tag pools.
 

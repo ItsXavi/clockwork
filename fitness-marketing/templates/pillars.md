@@ -1,26 +1,26 @@
-# Content pillar cheat sheet
+# Content pillar cheat sheet — XFITTV
 
-## Workouts (35%)
-- Demo one movement with 1 cue
-- Full session blueprint carousel
-- “Busy week” minimal equipment
+## WODs & Sessions (40%)
+- On-camera WOD demos with scale options
+- Strength + metcon day templates
+- “Busy day” 20–30 min engine builders
 
-## Nutrition (20%)
-- Protein shortcuts
-- Grocery defaults
-- Plate method visuals
+## Fuel & Recovery (15%)
+- Pre/post WOD nutrition
+- Hydration + sleep basics
+- Simple grocery defaults for training weeks
 
-## Mindset (20%)
-- Missed session protocols
-- Identity lines
-- Habit stacking with training
+## Mindset & Grind (20%)
+- Scale smart / leave ego out
+- Missed-day rescue sessions
+- Identity: train with intention
 
-## Proof (15%)
-- Process > glow-up
+## PRs & Progress (15%)
+- Clock splits and lift PRs
 - Form fixes
-- Metric stories (strength, consistency streak)
+- Consistency streaks over glow-ups
 
-## Community (10%)
-- Challenges
-- AMA / Live
-- Keyword CTAs → lead magnet
+## Community & CTA (10%)
+- Weekly challenges (comment DONE / WOD)
+- Lives / AMAs on scaling
+- Keyword CTAs → weekly WOD pack

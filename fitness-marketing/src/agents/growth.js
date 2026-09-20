@@ -55,13 +55,17 @@ export function buildGrowthPlaybook(brand, options = {}) {
           "Refresh profile bio CTA and link-in-bio offer"
         ];
 
+  const ig = brand.handles?.instagram || brand.handle;
+  const tt = brand.handles?.tiktok || brand.handle;
   const profileOptimization = [
-    `Name field: ${brand.brandName} | ${brand.niche}`,
-    "Bio line 1: who you help + outcome",
-    "Bio line 2: proof or differentiator",
-    "Bio line 3: CTA (free plan / apply)",
-    "Pinned posts: best Reel + starter plan carousel + proof",
-    "Highlight covers: Start Here, Workouts, Nutrition, Wins"
+    `Instagram name: ${brand.displayName || brand.brandName}${brand.creator ? ` | ${brand.creator}` : ""}`,
+    `Handles: IG/Meta ${ig} · TikTok ${tt}`,
+    `Name/niche line: ${brand.brandName} | ${brand.niche}`,
+    "Bio line 1: who you help + outcome (CrossFit-style / HIIT conditioning)",
+    "Bio line 2: proof or differentiator (on-camera sessions, community energy)",
+    "Bio line 3: CTA (free WOD pack / DM START)",
+    "Pinned posts: best Reel + weekly WOD carousel + PR/proof",
+    "Highlight covers: Start Here, WODs, Fuel, PRs, Live"
   ];
 
   const doNot = [

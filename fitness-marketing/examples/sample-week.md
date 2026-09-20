@@ -1,8 +1,8 @@
-# Peak Form — Content Calendar
+# XFITTV — Content Calendar
 Week of **2026-09-21**
 
 ## Strategy
-Peak Form · 2026-09-21 · Goal: grow followers. Lead with workouts & programming content, pair every post with one clear CTA, measure saves/shares over vanity likes.
+XFITTV · 2026-09-21 · Goal: grow followers. Lead with wods & sessions content, pair every post with one clear CTA, measure saves/shares over vanity likes.
 
 **Weekly focus**
 - Hook-first Reels/Shorts that stop the scroll
@@ -12,78 +12,46 @@ Peak Form · 2026-09-21 · Goal: grow followers. Lead with workouts & programmin
 
 KPIs: profile visits, saves, shares, follower net growth, avg watch %
 
-## Schedule (23 posts)
+## Schedule (13 posts)
 
 ### Monday · 2026-09-21
-1. **instagram** · carousel · 17:30 · _Nutrition Made Simple_
-   - Hook: Why ‘clean eating’ is slowing you down
+1. **instagram** · carousel · 17:30 · _Fuel & Recovery_
+   - Hook: Simple grocery list for CrossFit weeks
    - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
    - Caption:
 
 ```
-Why ‘clean eating’ is slowing you down
+Simple grocery list for CrossFit weeks
 
-Hit protein first. Drink water. Sleep 7+. Fancy supplements are optional; the basics aren’t.
+Pre-session: easy carbs + a little protein. Post-session: protein + carbs within the hour when you can.
 
-Show up for 30 minutes.
+Hit play. Train with XFITTV.
 
-Follow for weekly programming you can actually finish.
+Follow @xfittv for daily training energy.
 
 .
 .
 .
-@peakform · functional fitness
+@xfittv · XFitTV · Xavier Castro · crossfit hiit
 
-#athletetraining #hybridathlete #fittok #gymtok #reelsfitness #homegym #workoutroutine #nutrition
+#crossfittok #reelsfitness #workoutroutine #homegym #crossfithiit #nutrition #fitness #crossfit
 ```
 
-2. **tiktok** · reel · 12:00 · _Nutrition Made Simple_
-   - Hook: Grocery list for busy lifters
+2. **tiktok** · reel · 12:00 · _Fuel & Recovery_
+   - Hook: Hydration rule before you hit the clock
    - Visual: Talking-head hook (0–2s) → demo or B-roll → on-screen text beats → end card CTA
    - Caption:
 
 ```
-Grocery list for busy lifters — Strength is a skill.
+Hydration rule before you hit the clock — Scale it. Finish it. Come back stronger.
 
-Anchor every meal with a palm of protein, a fist of carbs around training, and colorful plants. Repeat 80% of days.
+Protein at every meal. Carbs around training. Water before caffeine. Recovery starts on the plate.
 
-DM me ‘PLAN’ for the free 7-day starter.
+Comment WOD and I’ll drop the full breakdown.
 
-@peakform
+@xfittvx
 
-#hybridathlete #fittok #gymtok #reelsfitness
-```
-
-3. **youtube_shorts** · carousel · 18:00 · _Mindset & Habits_
-   - Hook: Progress isn’t linear — here’s the fix
-   - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
-   - Caption:
-
-```
-Progress isn’t linear — here’s the fix — Show up for 30 minutes.
-
-Track inputs you control: sessions completed, protein days, bedtime. Outcomes follow inputs.
-
-Share this with your training partner.
-
-@peakform
-
-#strengthtraining #workoutmotivation #fitlife #gymtips #functionalfitness
-```
-
-4. **x** · reel · 08:30 · _Mindset & Habits_
-   - Hook: Missed a workout? Do this in 10 minutes
-   - Visual: Talking-head hook (0–2s) → demo or B-roll → on-screen text beats → end card CTA
-   - Caption:
-
-```
-Missed a workout? Do this in 10 minutes
-
-Track inputs you control: sessions completed, protein days, bedtime. Outcomes follow inputs.
-
-Consistency beats intensity.
-
-Comment START and I’ll drop the full plan.
+#functionaltraining #metcon #boxlife #enginework
 ```
 
 Stories:
@@ -91,193 +59,131 @@ Stories:
 - Behind the sessions B-roll + ‘add yours’
 
 ### Tuesday · 2026-09-22
-1. **instagram** · carousel · 17:30 · _Mindset & Habits_
-   - Hook: The identity shift that keeps you consistent
+1. **instagram** · carousel · 17:30 · _Mindset & Grind_
+   - Hook: Intensity with intention — not chaos
    - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
    - Caption:
 
 ```
-The identity shift that keeps you consistent
+Intensity with intention — not chaos
 
-Identity line: ‘I’m someone who trains even on messy weeks.’ Act accordingly.
+Identity line: ‘I train with intention.’ Scale when needed. Still finish.
 
-Strength is a skill.
+Scale it. Finish it. Come back stronger.
 
-Share this with your training partner.
+Comment WOD and I’ll drop the full breakdown.
 
 .
 .
 .
-@peakform · functional fitness
+@xfittv · XFitTV · Xavier Castro · crossfit hiit
 
-#mobilitytraining #athletetraining #hybridathlete #fittok #gymtok #reelsfitness #homegym #workoutroutine #mindset
+#crossfittraining #hiitworkout #functionaltraining #metcon #boxlife #enginework #xfittv #fittok #gymtok
 ```
 
-2. **tiktok** · reel · 12:00 · _Mindset & Habits_
-   - Hook: Progress isn’t linear — here’s the fix
+2. **tiktok** · reel · 12:00 · _Mindset & Grind_
+   - Hook: Consistency beats one heroic WOD
    - Visual: Talking-head hook (0–2s) → demo or B-roll → on-screen text beats → end card CTA
    - Caption:
 
 ```
-Progress isn’t linear — here’s the fix — Show up for 30 minutes.
+Consistency beats one heroic WOD — Hit play. Train with XFITTV.
 
-Identity line: ‘I’m someone who trains even on messy weeks.’ Act accordingly.
+Identity line: ‘I train with intention.’ Scale when needed. Still finish.
 
-Comment START and I’ll drop the full plan.
+Save this WOD for your next session.
 
-@peakform
+@xfittvx
 
-#fittok #gymtok #reelsfitness #homegym #workoutroutine
-```
-
-3. **x** · carousel · 08:30 · _Proof & Transformations_
-   - Hook: Form check: small fix, big strength jump
-   - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
-   - Caption:
-
-```
-Form check: small fix, big strength jump
-
-We didn’t chase intensity — we chased attendance. Strength climbed when the calendar got honest.
-
-Strength is a skill.
-
-Save this for your next session.
+#hiit #wod #workoutmotivation #gymlife #strengthandconditioning
 ```
 
 Stories:
-- Quick tip sticker: Strength is a skill.
+- Quick tip sticker: Scale it. Finish it. Come back stronger.
 - FAQ: ‘How many days/week to start?’
 
 ### Wednesday · 2026-09-23
-1. **instagram** · carousel · 17:30 · _Proof & Transformations_
-   - Hook: Client win: stronger without living at the gym
+1. **instagram** · carousel · 17:30 · _PRs & Progress_
+   - Hook: Form fix that unlocked the lift
    - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
    - Caption:
 
 ```
-Client win: stronger without living at the gym
+Form fix that unlocked the lift
 
-We didn’t chase intensity — we chased attendance. Strength climbed when the calendar got honest.
+We didn’t chase random intensity — we chased repeatable sessions. Splits dropped when attendance got honest.
 
-Consistency beats intensity.
+Intensity with intention.
 
-Save this for your next session.
+Follow @xfittvx on TikTok for more sessions.
 
 .
 .
 .
-@peakform · functional fitness
+@xfittv · XFitTV · Xavier Castro · crossfit hiit
 
-#strengthandconditioning #mobilitytraining #athletetraining #hybridathlete #fittok #gymtok #reelsfitness #homegym #workoutroutine #proof
+#workoutroutine #homegym #crossfithiit #proof #fitness #crossfit #hiit #wod #workoutmotivation #gymlife
 ```
 
-2. **tiktok** · story · 12:00 · _Proof & Transformations_
-   - Hook: What changed when we tracked one metric
+2. **tiktok** · story · 12:00 · _PRs & Progress_
+   - Hook: Same WOD, better splits — 8 weeks later
    - Visual: Poll or question sticker → quick tip → swipe/DM CTA
    - Caption:
 
 ```
-What changed when we tracked one metric — Strength is a skill.
+Same WOD, better splits — 8 weeks later — Scale it. Finish it. Come back stronger.
 
-One metric for 30 days. Photos optional. Energy and lifts told the story.
+One metric for 30 days: weekly sessions completed. Capacity followed consistency.
 
-DM me ‘PLAN’ for the free 7-day starter.
+Tag your training partner and run it together.
 
-@peakform
+@xfittvx
 
-#gymtok #reelsfitness #homegym
-```
-
-3. **x** · story · 08:30 · _Community & CTA_
-   - Hook: Ask me anything: programming edition
-   - Visual: Poll or question sticker → quick tip → swipe/DM CTA
-   - Caption:
-
-```
-Ask me anything: programming edition
-
-What’s one obstacle between you and consistency? I’ll reply with a fix.
-
-Show up for 30 minutes.
-
-Comment START and I’ll drop the full plan.
+#homegym #crossfithiit #proof
 ```
 
 Stories:
 - Behind the sessions B-roll + ‘add yours’
-- CTA: DM ‘PLAN’ for 7-Day Starter Plan
+- CTA: DM ‘PLAN’ for XFITTV Weekly WOD Pack
 
 ### Thursday · 2026-09-24
 1. **instagram** · story · 17:30 · _Community & CTA_
-   - Hook: Free plan drop — comment START
+   - Hook: Comment WOD for the full session breakdown
    - Visual: Poll or question sticker → quick tip → swipe/DM CTA
    - Caption:
 
 ```
-Free plan drop — comment START
+Comment WOD for the full session breakdown
 
-What’s one obstacle between you and consistency? I’ll reply with a fix.
+What’s your limiter — engine, strength, or recovery? Reply and I’ll give a fix.
 
-Show up for 30 minutes.
+Hit play. Train with XFITTV.
 
-Comment START and I’ll drop the full plan.
+Follow @xfittv for daily training energy.
 
 .
 .
 .
-@peakform · functional fitness
+@xfittv · XFitTV · Xavier Castro · crossfit hiit
 
-#functionalfitness #strengthandconditioning #mobilitytraining #athletetraining #hybridathlete #fittok #gymtok #reelsfitness
+#crossfittraining #hiitworkout #functionaltraining #metcon #boxlife #enginework #xfittv #fittok
 ```
 
-2. **tiktok** · carousel · 12:00 · _Workouts & Programming_
-   - Hook: Stop doing random workouts — do this instead
+2. **tiktok** · carousel · 12:00 · _WODs & Sessions_
+   - Hook: 12-minute engine builder you can film anywhere
    - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
    - Caption:
 
 ```
-Stop doing random workouts — do this instead — Consistency beats intensity.
+12-minute engine builder you can film anywhere — Intensity with intention.
 
-Day structure: power (3–5) → strength (5–8) → pump (10–15). Same template, swap movements weekly.
+Day template: power → strength → sweat. Same skeleton, swap movements. That’s how XFITTV stays progressive.
 
-Follow for weekly programming you can actually finish.
+DM START for this week’s training focus.
 
-@peakform
+@xfittvx
 
-#reelsfitness #homegym #workoutroutine #workouts
-```
-
-3. **youtube_shorts** · short · 18:00 · _Workouts & Programming_
-   - Hook: Stop doing random workouts — do this instead
-   - Visual: Pattern interrupt first frame → demo → punchy caption VO → subscribe/follow end
-   - Caption:
-
-```
-Stop doing random workouts — do this instead — Strength is a skill.
-
-Warm-up 5 min → A1 squat or hinge → A2 push → A3 pull → finisher 6–8 min. Rest 60–90s. Progressive overload beats novelty.
-
-Save this for your next session.
-
-@peakform
-
-#gymtips #functionalfitness #strengthandconditioning #mobilitytraining #athletetraining
-```
-
-4. **x** · reel · 08:30 · _Workouts & Programming_
-   - Hook: The 30-minute session that actually builds muscle
-   - Visual: Talking-head hook (0–2s) → demo or B-roll → on-screen text beats → end card CTA
-   - Caption:
-
-```
-The 30-minute session that actually builds muscle
-
-Warm-up 5 min → A1 squat or hinge → A2 push → A3 pull → finisher 6–8 min. Rest 60–90s. Progressive overload beats novelty.
-
-Show up for 30 minutes.
-
-Share this with your training partner.
+#workoutroutine #homegym #crossfithiit #workouts
 ```
 
 Stories:
@@ -285,134 +191,87 @@ Stories:
 - Poll: training today — morning or evening?
 
 ### Friday · 2026-09-25
-1. **instagram** · short · 17:30 · _Workouts & Programming_
-   - Hook: Busy week protocol: full body in 28 minutes
+1. **instagram** · short · 17:30 · _WODs & Sessions_
+   - Hook: 3 movements. One clock. Full-send conditioning
    - Visual: Pattern interrupt first frame → demo → punchy caption VO → subscribe/follow end
    - Caption:
 
 ```
-Busy week protocol: full body in 28 minutes
+3 movements. One clock. Full-send conditioning
 
-Pick one main lift. Hit 4 hard sets. Pair accessories that don’t wreck recovery. Leave one rep in the tank.
+EMOM or AMRAP structure. Pick movements you can repeat under fatigue. Leave one rep in the tank on the strength piece.
 
-Strength is a skill.
+Scale it. Finish it. Come back stronger.
 
-DM me ‘PLAN’ for the free 7-day starter.
+Comment WOD and I’ll drop the full breakdown.
 
 .
 .
 .
-@peakform · functional fitness
+@xfittv · XFitTV · Xavier Castro · crossfit hiit
 
-#gymtips #functionalfitness #strengthandconditioning #mobilitytraining #athletetraining #hybridathlete #fittok #gymtok #reelsfitness
+#workoutroutine #homegym #crossfithiit #workouts #fitness #crossfit #hiit #wod #workoutmotivation
 ```
 
-2. **tiktok** · reel · 12:00 · _Workouts & Programming_
-   - Hook: Busy week protocol: full body in 28 minutes
+2. **tiktok** · reel · 12:00 · _WODs & Sessions_
+   - Hook: 3 movements. One clock. Full-send conditioning
    - Visual: Talking-head hook (0–2s) → demo or B-roll → on-screen text beats → end card CTA
    - Caption:
 
 ```
-Busy week protocol: full body in 28 minutes — Show up for 30 minutes.
+3 movements. One clock. Full-send conditioning — Hit play. Train with XFITTV.
 
-Day structure: power (3–5) → strength (5–8) → pump (10–15). Same template, swap movements weekly.
+Day template: power → strength → sweat. Same skeleton, swap movements. That’s how XFITTV stays progressive.
 
-Share this with your training partner.
+Save this WOD for your next session.
 
-@peakform
+@xfittvx
 
-#homegym #workoutroutine #workouts #fitness #strengthtraining
-```
-
-3. **x** · carousel · 08:30 · _Workouts & Programming_
-   - Hook: Busy week protocol: full body in 28 minutes
-   - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
-   - Caption:
-
-```
-Busy week protocol: full body in 28 minutes
-
-Warm-up 5 min → A1 squat or hinge → A2 push → A3 pull → finisher 6–8 min. Rest 60–90s. Progressive overload beats novelty.
-
-Consistency beats intensity.
-
-Comment START and I’ll drop the full plan.
+#xfittv #fittok #gymtok #crossfittok #reelsfitness
 ```
 
 Stories:
-- CTA: DM ‘PLAN’ for 7-Day Starter Plan
-- Quick tip sticker: Strength is a skill.
+- CTA: DM ‘PLAN’ for XFITTV Weekly WOD Pack
+- Quick tip sticker: Scale it. Finish it. Come back stronger.
 
 ### Saturday · 2026-09-26
-1. **instagram** · carousel · 17:30 · _Workouts & Programming_
-   - Hook: 3 lifts that cover 80% of your results
+1. **instagram** · carousel · 17:30 · _WODs & Sessions_
+   - Hook: Stop random metcons — run this session instead
    - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
    - Caption:
 
 ```
-3 lifts that cover 80% of your results
+Stop random metcons — run this session instead
 
-Warm-up 5 min → A1 squat or hinge → A2 push → A3 pull → finisher 6–8 min. Rest 60–90s. Progressive overload beats novelty.
+Warm-up 5 → strength focus 12 → metcon 10–14. Scale loads so your form survives the clock. Film the work. Post the finish.
 
-Show up for 30 minutes.
+Hit play. Train with XFITTV.
 
-Comment START and I’ll drop the full plan.
+Save this WOD for your next session.
 
 .
 .
 .
-@peakform · functional fitness
+@xfittv · XFitTV · Xavier Castro · crossfit hiit
 
-#fitlife #gymtips #functionalfitness #strengthandconditioning #mobilitytraining #athletetraining #hybridathlete #fittok #gymtok #reelsfitness
+#crossfittraining #hiitworkout #functionaltraining #metcon #boxlife #enginework #xfittv #fittok #gymtok #crossfittok
 ```
 
-2. **tiktok** · short · 12:00 · _Workouts & Programming_
-   - Hook: The 30-minute session that actually builds muscle
+2. **tiktok** · short · 12:00 · _WODs & Sessions_
+   - Hook: Today’s XFITTV WOD — scale it and send it
    - Visual: Pattern interrupt first frame → demo → punchy caption VO → subscribe/follow end
    - Caption:
 
 ```
-The 30-minute session that actually builds muscle — Consistency beats intensity.
+Today’s XFITTV WOD — scale it and send it — Intensity with intention.
 
-Day structure: power (3–5) → strength (5–8) → pump (10–15). Same template, swap movements weekly.
+Day template: power → strength → sweat. Same skeleton, swap movements. That’s how XFITTV stays progressive.
 
-Save this for your next session.
+Tag your training partner and run it together.
 
-@peakform
+@xfittvx
 
-#workoutroutine #workouts #fitness
-```
-
-3. **youtube_shorts** · carousel · 18:00 · _Nutrition Made Simple_
-   - Hook: Grocery list for busy lifters
-   - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
-   - Caption:
-
-```
-Grocery list for busy lifters — Strength is a skill.
-
-Hit protein first. Drink water. Sleep 7+. Fancy supplements are optional; the basics aren’t.
-
-DM me ‘PLAN’ for the free 7-day starter.
-
-@peakform
-
-#strengthandconditioning #mobilitytraining #athletetraining #hybridathlete
-```
-
-4. **x** · reel · 08:30 · _Nutrition Made Simple_
-   - Hook: Cut fat without cutting your social life
-   - Visual: Talking-head hook (0–2s) → demo or B-roll → on-screen text beats → end card CTA
-   - Caption:
-
-```
-Cut fat without cutting your social life
-
-Build a default breakfast + lunch. Decide dinner once. Decision fatigue is what ruins diets.
-
-Show up for 30 minutes.
-
-Share this with your training partner.
+#hiitworkout #functionaltraining #metcon
 ```
 
 Stories:
@@ -420,45 +279,30 @@ Stories:
 - Behind the sessions B-roll + ‘add yours’
 
 ### Sunday · 2026-09-27
-1. **instagram** · carousel · 17:30 · _Nutrition Made Simple_
-   - Hook: Cut fat without cutting your social life
+1. **instagram** · carousel · 17:30 · _Fuel & Recovery_
+   - Hook: Recovery plate after a brutal metcon
    - Visual: Cover hook → 5–7 value slides → final CTA slide with keyword
    - Caption:
 
 ```
-Cut fat without cutting your social life
+Recovery plate after a brutal metcon
 
-Build a default breakfast + lunch. Decide dinner once. Decision fatigue is what ruins diets.
+Keep a default breakfast and lunch. Decide dinner once. High training volume hates decision fatigue.
 
-Strength is a skill.
+Scale it. Finish it. Come back stronger.
 
-DM me ‘PLAN’ for the free 7-day starter.
+Tag your training partner and run it together.
 
 .
 .
 .
-@peakform · functional fitness
+@xfittv · XFitTV · Xavier Castro · crossfit hiit
 
-#workoutmotivation #fitlife #gymtips #functionalfitness #strengthandconditioning #mobilitytraining #athletetraining #hybridathlete
-```
-
-2. **x** · reel · 08:30 · _Nutrition Made Simple_
-   - Hook: The simplest plate method that works
-   - Visual: Talking-head hook (0–2s) → demo or B-roll → on-screen text beats → end card CTA
-   - Caption:
-
-```
-The simplest plate method that works
-
-Anchor every meal with a palm of protein, a fist of carbs around training, and colorful plants. Repeat 80% of days.
-
-Show up for 30 minutes.
-
-Share this with your training partner.
+#workoutroutine #homegym #crossfithiit #nutrition #fitness #crossfit #hiit #wod
 ```
 
 Stories:
-- Quick tip sticker: Show up for 30 minutes.
+- Quick tip sticker: Hit play. Train with XFITTV.
 - FAQ: ‘How many days/week to start?’
 
 ---

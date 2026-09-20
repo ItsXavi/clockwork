@@ -1,16 +1,17 @@
-# Profile bio templates
+# Profile bio templates — XFITTV
 
-## Option A — Outcome + method
-{Brand} | {niche} for busy {audience}
-{Differentiator in one line}
-Free {lead magnet} → {CTA keyword}
+## Instagram / Meta (@xfittv)
+XFITTV | Xavier Castro
+CrossFit-style HIIT, strength & conditioning on camera
+Free weekly WOD pack → DM START
 
-## Option B — Proof-led
-Helping {audience} {result} without {pain}
-{ cred / clients / years }
-Apply for coaching / grab the free plan ↓
+## TikTok (@xfittvx)
+XFITTV · Xavier Castro
+Hit play. Train with me.
+Follow for WODs, metcons & engine work 💪
+Comment WOD for the full session
 
-## Option C — Challenge-led
-{N}-day {challenge name} for {audience}
-Train smarter. Eat simpler. Stay consistent.
-Comment {KEYWORD} to join
+## Option — Challenge-led
+XFITTV 7-Day Engine Challenge
+Scale it. Finish it. Come back stronger.
+Comment START to join

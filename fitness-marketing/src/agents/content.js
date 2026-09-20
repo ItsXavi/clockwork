@@ -2,67 +2,67 @@ import { pick, seededIndex } from "../lib/io.js";
 
 const HOOKS = {
   workouts: [
-    "The 30-minute session that actually builds muscle",
-    "Stop doing random workouts — do this instead",
-    "3 lifts that cover 80% of your results",
-    "Busy week protocol: full body in 28 minutes",
-    "If you only have 4 days, train like this"
+    "Today’s XFITTV WOD — scale it and send it",
+    "12-minute engine builder you can film anywhere",
+    "Stop random metcons — run this session instead",
+    "3 movements. One clock. Full-send conditioning",
+    "Busy day protocol: strength + sweat in 30"
   ],
   nutrition: [
-    "Protein without meal prep drama",
-    "The simplest plate method that works",
-    "Cut fat without cutting your social life",
-    "Grocery list for busy lifters",
-    "Why ‘clean eating’ is slowing you down"
+    "Pre-WOD fuel without the crash",
+    "Protein targets for high-volume training",
+    "Recovery plate after a brutal metcon",
+    "Hydration rule before you hit the clock",
+    "Simple grocery list for CrossFit weeks"
   ],
   mindset: [
-    "Motivation is unreliable — build this instead",
-    "Missed a workout? Do this in 10 minutes",
-    "The identity shift that keeps you consistent",
-    "Stop negotiating with yourself at 6am",
-    "Progress isn’t linear — here’s the fix"
+    "Scale smart. Ego stays outside the box",
+    "Missed a day? Here’s the 15-minute rescue session",
+    "Intensity with intention — not chaos",
+    "The identity shift: show up on the hard days",
+    "Consistency beats one heroic WOD"
   ],
   proof: [
-    "12 weeks of boring consistency (results)",
-    "What changed when we tracked one metric",
-    "Client win: stronger without living at the gym",
-    "Before the glow-up: the actual program",
-    "Form check: small fix, big strength jump"
+    "PR breakdown: what actually changed",
+    "Same WOD, better splits — 8 weeks later",
+    "Form fix that unlocked the lift",
+    "Engine progress you can feel on the clock",
+    "Before the highlight reel: the boring reps"
   ],
   community: [
-    "This week’s challenge (join in the comments)",
-    "Ask me anything: programming edition",
-    "Tag your training partner",
-    "Drop your biggest gym obstacle below",
-    "Free plan drop — comment START"
+    "This week’s XFITTV challenge — comment DONE",
+    "Ask me anything: scaling & pacing",
+    "Tag your partner and race this WOD",
+    "Drop your biggest limiter below",
+    "Comment WOD for the full session breakdown"
   ]
 };
 
 const BODIES = {
   workouts: [
-    "Warm-up 5 min → A1 squat or hinge → A2 push → A3 pull → finisher 6–8 min. Rest 60–90s. Progressive overload beats novelty.",
-    "Pick one main lift. Hit 4 hard sets. Pair accessories that don’t wreck recovery. Leave one rep in the tank.",
-    "Day structure: power (3–5) → strength (5–8) → pump (10–15). Same template, swap movements weekly."
+    "Warm-up 5 → strength focus 12 → metcon 10–14. Scale loads so your form survives the clock. Film the work. Post the finish.",
+    "EMOM or AMRAP structure. Pick movements you can repeat under fatigue. Leave one rep in the tank on the strength piece.",
+    "Day template: power → strength → sweat. Same skeleton, swap movements. That’s how XFITTV stays progressive."
   ],
   nutrition: [
-    "Anchor every meal with a palm of protein, a fist of carbs around training, and colorful plants. Repeat 80% of days.",
-    "Hit protein first. Drink water. Sleep 7+. Fancy supplements are optional; the basics aren’t.",
-    "Build a default breakfast + lunch. Decide dinner once. Decision fatigue is what ruins diets."
+    "Protein at every meal. Carbs around training. Water before caffeine. Recovery starts on the plate.",
+    "Pre-session: easy carbs + a little protein. Post-session: protein + carbs within the hour when you can.",
+    "Keep a default breakfast and lunch. Decide dinner once. High training volume hates decision fatigue."
   ],
   mindset: [
-    "Shrink the commitment until it’s non-negotiable. 20 minutes done beats the perfect session skipped.",
-    "Track inputs you control: sessions completed, protein days, bedtime. Outcomes follow inputs.",
-    "Identity line: ‘I’m someone who trains even on messy weeks.’ Act accordingly."
+    "Shrink the session until it’s non-negotiable. A scaled WOD finished beats a hero WOD skipped.",
+    "Track inputs: sessions done, sleep, protein days. The clock times follow the habits.",
+    "Identity line: ‘I train with intention.’ Scale when needed. Still finish."
   ],
   proof: [
-    "We didn’t chase intensity — we chased attendance. Strength climbed when the calendar got honest.",
-    "One metric for 30 days. Photos optional. Energy and lifts told the story.",
-    "Form cue fixed. Numbers moved. That’s the real transformation content."
+    "We didn’t chase random intensity — we chased repeatable sessions. Splits dropped when attendance got honest.",
+    "One metric for 30 days: weekly sessions completed. Capacity followed consistency.",
+    "Cue fixed. Load moved. That’s the real transformation content."
   ],
   community: [
-    "This week: 4 sessions. Comment done after each one. Accountability > hype.",
-    "Want the plan? Comment the keyword. I’ll send the template.",
-    "What’s one obstacle between you and consistency? I’ll reply with a fix."
+    "This week: 4 sessions. Comment DONE after each. Accountability > hype.",
+    "Want the full WOD? Comment the keyword. I’ll send the breakdown.",
+    "What’s your limiter — engine, strength, or recovery? Reply and I’ll give a fix."
   ]
 };
 
@@ -112,15 +112,22 @@ export function generatePost(brand, { pillarId, platform, format, daySeed = 0 })
   };
 }
 
+function platformHandle(brand, platform) {
+  return brand.handles?.[platform] || brand.handle || "";
+}
+
 function buildCaption({ brand, platform, hook, body, cta, phrase }) {
+  const handle = platformHandle(brand, platform);
+  const credit = brand.creator ? `${brand.displayName || brand.brandName} · ${brand.creator}` : brand.brandName;
+
   if (platform === "x") {
     return `${hook}\n\n${body}\n\n${phrase}\n\n${cta}`;
   }
   if (platform === "tiktok" || platform === "youtube_shorts") {
-    return `${hook} — ${phrase}\n\n${body}\n\n${cta}\n\n${brand.handle}`;
+    return `${hook} — ${phrase}\n\n${body}\n\n${cta}\n\n${handle}`.trim();
   }
-  // instagram default
-  return `${hook}\n\n${body}\n\n${phrase}\n\n${cta}\n\n.\n.\n.\n${brand.handle} · ${brand.niche}`;
+  // instagram / meta default
+  return `${hook}\n\n${body}\n\n${phrase}\n\n${cta}\n\n.\n.\n.\n${handle} · ${credit} · ${brand.niche}`;
 }
 
 /**

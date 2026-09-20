@@ -1,52 +1,61 @@
 {
-  "brandName": "Peak Form",
-  "handle": "@peakform",
-  "niche": "functional fitness",
+  "brandName": "XFITTV",
+  "displayName": "XFitTV",
+  "creator": "Xavier Castro",
+  "handle": "@xfittv",
+  "handles": {
+    "instagram": "@xfittv",
+    "meta": "@xfittv",
+    "tiktok": "@xfittvx"
+  },
+  "niche": "crossfit hiit",
   "audience": {
-    "primary": "busy professionals 25–40 who want strength and energy without living in the gym",
+    "primary": "athletes and everyday lifters who want CrossFit-style conditioning, strength, and high-energy training they can follow on camera",
     "painPoints": [
-      "no time for 90-minute workouts",
-      "plateaus and inconsistent motivation",
-      "confusion about programming and nutrition"
+      "random WODs with no progression",
+      "burning out from all-out intensity every day",
+      "not knowing how to scale movements",
+      "inconsistent training when life gets busy"
     ],
     "desires": [
-      "look athletic in clothes",
-      "feel strong and confident",
-      "simple routines that fit a real schedule"
+      "get fitter, stronger, and more conditioned",
+      "train with clear sessions they can film and finish",
+      "build a community around XFITTV workouts",
+      "look and feel athletic without overcomplicating it"
     ]
   },
   "voice": {
-    "tone": ["direct", "encouraging", "no-fluff", "coach-like"],
-    "avoid": ["shame", "miracle claims", "bro-speak overload", "medical advice"],
+    "tone": ["high-energy", "direct", "motivational", "coach-on-camera"],
+    "avoid": ["shame", "miracle claims", "medical advice", "gatekeeping beginners"],
     "signaturePhrases": [
-      "Show up for 30 minutes.",
-      "Strength is a skill.",
-      "Consistency beats intensity."
+      "Hit play. Train with XFITTV.",
+      "Scale it. Finish it. Come back stronger.",
+      "Intensity with intention."
     ]
   },
-  "platforms": ["instagram", "tiktok", "x", "youtube_shorts"],
+  "platforms": ["instagram", "tiktok"],
   "pillars": [
     {
       "id": "workouts",
-      "name": "Workouts & Programming",
-      "share": 0.35,
+      "name": "WODs & Sessions",
+      "share": 0.4,
       "formats": ["reel", "carousel", "short"]
     },
     {
       "id": "nutrition",
-      "name": "Nutrition Made Simple",
-      "share": 0.2,
-      "formats": ["carousel", "reel", "thread"]
+      "name": "Fuel & Recovery",
+      "share": 0.15,
+      "formats": ["carousel", "reel", "story"]
     },
     {
       "id": "mindset",
-      "name": "Mindset & Habits",
+      "name": "Mindset & Grind",
       "share": 0.2,
       "formats": ["reel", "story", "carousel"]
     },
     {
       "id": "proof",
-      "name": "Proof & Transformations",
+      "name": "PRs & Progress",
       "share": 0.15,
       "formats": ["reel", "carousel", "story"]
     },
@@ -58,26 +67,25 @@
     }
   ],
   "postingCadence": {
-    "instagram": { "feed": 5, "reels": 5, "stories": 7 },
-    "tiktok": { "videos": 5 },
-    "x": { "posts": 7, "threads": 2 },
-    "youtube_shorts": { "shorts": 3 }
+    "instagram": { "feed": 4, "reels": 5, "stories": 7 },
+    "tiktok": { "videos": 5 }
   },
   "ctaLibrary": [
-    "Save this for your next session.",
-    "Follow for weekly programming you can actually finish.",
-    "Comment START and I’ll drop the full plan.",
-    "Share this with your training partner.",
-    "DM me ‘PLAN’ for the free 7-day starter."
+    "Follow @xfittv for daily training energy.",
+    "Save this WOD for your next session.",
+    "Comment WOD and I’ll drop the full breakdown.",
+    "Tag your training partner and run it together.",
+    "Follow @xfittvx on TikTok for more sessions.",
+    "DM START for this week’s training focus."
   ],
   "offers": [
     {
-      "name": "7-Day Starter Plan",
+      "name": "XFITTV Weekly WOD Pack",
       "type": "lead_magnet",
       "hook": "free"
     },
     {
-      "name": "Peak Form Coaching",
+      "name": "XFITTV Coaching / Programming",
       "type": "core_offer",
       "hook": "limited spots"
     }
